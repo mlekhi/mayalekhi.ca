@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Inspect from "inspx";
+import { Route, Routes } from "react-router-dom";
+
+import Navigation from "./components/Navigation/Navigation.jsx";
+import Home from "./pages/Home/Home.jsx";
+import Gallery from "./pages/Gallery/Gallery.jsx";
+import Playground from "./pages/Playground/Playground.jsx";
+import LockedIn from "./pages/Playground/LockedIn/LockedIn.jsx";
+import Memoria from "./pages/Playground/Memoria/Memoria.jsx";
+import SuperDMs from "./pages/Playground/SuperDMs/SuperDMs.jsx";
+
+import mixpanel from "mixpanel-browser";
+
+mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
+  debug: true,
+  track_pageview: true,
+  persistence: "localStorage",
+  ignore_dnt: true,
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="body">
+      <Inspect>
+        <div className="viewer">
+          <Navigation />
+          <Routes>
+            <Route path="*" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/Playground" element={<Playground />} />
+            <Route path="/Playground/LockedIn" element={<LockedIn />} />
+            <Route path="/Playground/Memoria" element={<Memoria />} />
+            <Route path="/Playground/SuperDMs" element={<SuperDMs />} />
+          </Routes>
+        </div>
+      </Inspect>
     </div>
   );
 }
