@@ -90,7 +90,7 @@ function Home() {
         <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
           <div className="header-container">
             <h2>Hi! I'm Maya Lekhi</h2>
-            <h2 class="colored">Software Engineer, Researcher, Founder</h2>
+            <h2 class="colored">Software Engineer, Product Designer, Researcher</h2>
           </div>
           <p>
             I am a driven second-year Computer Science student at Western University.

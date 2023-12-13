@@ -1,4 +1,4 @@
-import s from "../Playground/Playground.module.css";
+import s from "../Projects/Projects.module.css";
 import React, { useEffect } from "react";
 import mixpanel from "mixpanel-browser";
 
@@ -18,7 +18,7 @@ function Gallery() {
   return (
     <div className="content-body">
       <p>
-        A collection of some works I'm proud of. Click to read.</p>
+        A collection of some of my works I'm fond of. Click to read.</p>
       <div className={s.imgGallery}>
         <div className={s.galleryTitle}>
           <p className="rotateNinetyCounter">poems</p>

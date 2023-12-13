@@ -78,7 +78,7 @@ const Navigation = () => {
       <div className={"nav-bar float-middle"}>
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/Gallery">Gallery</CustomLink>
-        <CustomLink to="/Playground">Projects</CustomLink>
+        <CustomLink to="/Projects">Projects</CustomLink>
       </div>
     </div>
   );

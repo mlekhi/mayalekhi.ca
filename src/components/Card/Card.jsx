@@ -4,7 +4,6 @@ import mixpanel from "mixpanel-browser";
 
 mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   debug: true,
-  // track_pageview: true,
   persistence: "localStorage",
   ignore_dnt: true,
 });
@@ -28,7 +27,7 @@ const Card = ({ url, image, title, desc, properties }) => {
       <a
         href={url}
         onClick={() => {
-          mixpanel.track("Playground: " + cardTitle);
+          mixpanel.track("Projects: " + cardTitle);
         }}
       >
         <div className={"card"}>
@@ -44,8 +43,8 @@ const Card = ({ url, image, title, desc, properties }) => {
             </div>
             {properties ? (
               <div className="flex flex-row gap-2 pt-2">
-                {propertiesMappable?.map((property) => (
-                  <div className="nav-item-active text-xs">{property}</div>
+                {propertiesMappable?.map((property, index) => (
+                  <div className="nav-item-active text-xs" key={index}>{property}</div>
                 ))}
               </div>
             ) : (

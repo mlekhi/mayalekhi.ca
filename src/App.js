@@ -4,10 +4,10 @@ import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Gallery from "./pages/Gallery/Gallery.jsx";
-import Playground from "./pages/Playground/Playground.jsx";
-import LockedIn from "./pages/Playground/LockedIn/LockedIn.jsx";
-import Memoria from "./pages/Playground/Memoria/Memoria.jsx";
-import SuperDMs from "./pages/Playground/SuperDMs/SuperDMs.jsx";
+import Projects from "./pages/Projects/Projects.jsx";
+import LockedIn from "./pages/Projects/LockedIn/LockedIn.jsx";
+import Memoria from "./pages/Projects/Memoria/Memoria.jsx";
+import SuperDMs from "./pages/Projects/SuperDMs/SuperDMs.jsx";
 
 import mixpanel from "mixpanel-browser";
 
@@ -28,10 +28,10 @@ function App() {
             <Route path="*" element={<Home />} />
             <Route exact path="/" element={<Home />} />
             <Route path="/Gallery" element={<Gallery />} />
-            <Route path="/Playground" element={<Playground />} />
-            <Route path="/Playground/LockedIn" element={<LockedIn />} />
-            <Route path="/Playground/Memoria" element={<Memoria />} />
-            <Route path="/Playground/SuperDMs" element={<SuperDMs />} />
+            <Route path="/Projects" element={<Projects />} />
+            <Route path="/Projects/LockedIn" element={<LockedIn />} />
+            <Route path="/Projects/Memoria" element={<Memoria />} />
+            <Route path="/Projects/SuperDMs" element={<SuperDMs />} />
           </Routes>
         </div>
       </Inspect>
