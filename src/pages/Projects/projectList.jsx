@@ -36,7 +36,7 @@ export const projects = [
       paragraph:
         "TL;DW - Too Long; Didn't Watch is a simple and convenient web application that turns Youtube and user-uploaded videos into condensed notes categorized by definition, core concept, example and points. It saves you time by turning long-form educational content into organized and digestible text so you can learn smarter, not harder.\n\nHow it works: \nYoutube Video Link -> MP3 File -> Transcribed Text -> Cohere's Generate API to summarize -> Cohere's Classify API to organize by type of point (main concept, point, example, definition) -> Cohere's Generate API to extract key words -> Notes coded into a downloadable PDF",
       tags: ["Web Scraping", "ETL", "AI", "JS", "React"],
-      imageURL: "samples/cover.png",
+      imageURL: "samples/caffeinated.png",
       colour: "#242424",
       disabled: false,
       links: [
