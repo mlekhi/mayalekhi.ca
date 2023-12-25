@@ -76,3 +76,26 @@ etc...
 
   /* border: 1px solid blue !important; */
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 984px;
+  margin: 20px auto 160px;
+  gap: 32px;
+}
+
+.header {
+  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 36px;
+}
+
+.devGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
