@@ -5,12 +5,28 @@ import { motion } from "framer-motion";
 import Card from "../../components/Card/Card";
 import mixpanel from "mixpanel-browser";
 
+import { useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   debug: true,
-  // track_pageview: true,
   persistence: "localStorage",
   ignore_dnt: true,
 });
+
+const CustomLink = ({ onClick, children, props }) => {
+  return (
+    <div onClick={onClick} {...props}>
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className={`nav-item`}
+      >
+        <p>{children}</p>
+      </motion.div>
+    </div>
+  );
+};
 
 function Home() {
   const iconAnimate = {
@@ -32,7 +48,7 @@ function Home() {
       positionName: "Technology Operations",
     },
     {
-      url: "https://www.cucai.ca",
+      url: "https://castellanilab.com",
       image: Img.CastellaniCard,
       orgName: "Castellani Lab",
       positionName: "Bioinformatics Research",
@@ -97,7 +113,7 @@ function Home() {
             I’m extremely passionate about tech, social impact, 
             writing, and nurturing communities! <br />
             <br />
-            Currently, I'm lead Western University's largest conference on emerging technology at {" "}
+            Currently, I'm leading Western University's largest conference on emerging technology at {" "}
             <a target="_blank" href="https://www.foundersnetwork.ca">
               Western Founder's Network, 
             </a> Western's entrepreneurship society. 
@@ -127,14 +143,11 @@ function Home() {
         </div>
       </div>
       <div className={"nav-bar"}>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+        <CustomLink
           variants={iconAnimate}
           onClick={() => setCardsShown("past")}
           className={`${styles["button"]} ${
-            // eslint-disable-next-line
-            cardsShown == "present" ? styles["button-active"] : ""
+            cardsShown == "[present]" ? styles["button-active"] : ""
           }`}
         >
           Present
@@ -145,17 +158,14 @@ function Home() {
               alignSelf: "center",
             }}
           >
-            ({cardsPast.length})
+            ({cardsPresent.length})
           </span>
-        </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          variants={iconAnimate}
+        </CustomLink>
+        <CustomLink
+          variants={iconAnimate}        
           onClick={() => setCardsShown("present")}
           className={`${styles["button"]} ${
-            // eslint-disable-next-line
-            cardsShown == "past" ? styles["button-active"] : ""
+            cardsShown == "[past]" ? styles["button-active"] : ""
           }`}
         >
           Past
@@ -166,9 +176,9 @@ function Home() {
               alignSelf: "center",
             }}
           >
-            ({cardsPresent.length})
+            ({cardsPast.length})
           </span>
-        </motion.button>
+        </CustomLink>
       </div>
       <div className={"gallery"}>
         {cardsCur.map((card, index) => {

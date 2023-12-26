@@ -32,8 +32,6 @@ li {
   margin: 0;
   padding: 0;
 
-  box-sizing: border-box;
-  /* border: 0.1px solid rgba(255, 0, 0, 0.25) !important; */
   background: none;
   color: #dedede;
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -116,12 +114,12 @@ h2 {
   align-items: flex-start;
   position: relative;
 
-  background-color: #20204f;
+  background-color: #161616;
 }
 
 @media screen and (min-width: 481px) {
   .body {
-    padding: 1rem;
+    padding-top: 35px;
   }
 
   .viewer {
@@ -131,14 +129,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem;
-    gap: 2rem;
-
-    background: #1b1b38;
-    border: 2px solid #343434;
-    border-radius: 15px;
-
     position: relative;
+    padding-top: 50px;
   }
 
   .float-middle {

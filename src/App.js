@@ -1,4 +1,3 @@
-import Inspect from "inspx";
 import { Route, Routes } from "react-router-dom";
 
 import Navigation from "./components/Navigation/Navigation.jsx";
@@ -18,9 +17,8 @@ mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
 function App() {
   return (
     <div className="body">
-      <Inspect>
+      <Navigation />
         <div className="viewer">
-          <Navigation />
           <Routes>
             <Route path="*" element={<Home />} />
             <Route exact path="/" element={<Home />} />
@@ -28,7 +26,6 @@ function App() {
             <Route path="/Projects" element={<Projects />} />
           </Routes>
         </div>
-      </Inspect>
     </div>
   );
 }

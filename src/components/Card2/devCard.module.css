@@ -7,15 +7,19 @@
   
   .imageBlock {
     display: flex;
-    height: 250px;
+    height: 300px;
     overflow: hidden;
     justify-self: center;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
   }
   
   .image {
     transition: all 0.3s ease;
     opacity: 0.8;
-  
+    max-height: 225px;
+    border-radius: 10px; /* Adjust the value to your preference for rounded corners */
+
     &Disabled {
       opacity: 0.8;
     }
@@ -76,7 +80,7 @@
     opacity: 1;
   }
 
-  h1 {
+  h2 {
     font-size: 25pt;
     font-weight: 600;  
   }

@@ -18,7 +18,7 @@ const DevCard = ({ title, description, tags, imageURL, colour, disabled }) => {
       className={!disabled ? styles.card : styles.cardDisabled}
       onClick={disabled ? undefined : handleClick}
     >
-      <div className={styles.imageBlock}>
+      <div className={styles.imageBlock} style={{ backgroundColor: "#21212b" }}>
         <img
           className={!disabled ? styles.image : styles.imageDisabled}
           src={imageURL}
@@ -28,7 +28,7 @@ const DevCard = ({ title, description, tags, imageURL, colour, disabled }) => {
       <div className={styles.info} style={{ backgroundColor: colour }}>
         <div className={styles.infoMain}>
           <h5>{title}</h5>
-          <h1>{description}</h1>
+          <h2>{description}</h2>
         </div>
         <div>
           <div className={styles.tagList}>

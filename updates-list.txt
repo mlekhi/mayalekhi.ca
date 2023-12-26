@@ -1,0 +1,9 @@
+current problems:
+mobile layout
+past/present transition doesn't work
+getting the links in the projects page to work
+
+future updates:
+i dislike the gallery page
+make footer -- link it to the open source
+make notes page

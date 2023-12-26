@@ -8,7 +8,7 @@ export default function Dev() {
     <main className={styles.main}>
       <div className={styles.projects}>
         <div className={styles.header}>
-          <h2>I'm passionate about developing with purpose.</h2>
+          <h1>I develop with purpose.</h1>
           <p>
             I love unraveling complex problems, leveraging technology to bridge gaps, and 
             crafting tech solutions that center around human needs. 

@@ -31,7 +31,7 @@ const Navigation = () => {
   return (
     <div className={"banner"}>
       <div>
-        <p className={styles.webtitle}>maya lekhi</p>
+        <a className={styles.webtitle} href="/">maya lekhi</a>
       </div>
       <div className={"nav-icons-div"}>
         <motion.a
