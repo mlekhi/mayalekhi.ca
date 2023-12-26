@@ -7,3 +7,4 @@ future updates:
 i dislike the gallery page
 make footer -- link it to the open source
 make notes page
+replace the animation on the nav bar so its not that spinny thing
