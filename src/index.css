@@ -79,16 +79,18 @@ p a:hover {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 24pt;
-}
-
 .header-container {
   align-items: center; /* This ensures the text is aligned if they have different font sizes */
 }
 
 .header-container h2 {
   margin-right: 10px; /* Adjust space between headers */
+  font-size: 70px;
+}
+
+.header-container h3 {
+  margin-right: 10px; /* Adjust space between headers */
+  font-size: 32px;
 }
 
 .colored {

@@ -5,9 +5,6 @@ import { motion } from "framer-motion";
 import Card from "../../components/Card/Card";
 import mixpanel from "mixpanel-browser";
 
-import { useMatch, useResolvedPath } from "react-router-dom";
-import { Link } from "react-router-dom";
-
 mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   debug: true,
   persistence: "localStorage",
@@ -105,8 +102,8 @@ function Home() {
       >
         <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
           <div className="header-container">
-            <h2>Hi! I'm Maya Lekhi</h2>
-            <h2 class="colored">Software Engineer, Product Designer, Researcher</h2>
+            <h2>Hi! I'm Maya Lekhi.</h2>
+            <h3 class="colored">Software Engineer, Researcher, Founder</h3>
           </div>
           <p>
             I am a driven second-year Computer Science student at Western University.
@@ -192,6 +189,8 @@ function Home() {
             />
           );
         })}
+      </div>
+      <div className={"content-body"}>
       </div>
     </div>
   );

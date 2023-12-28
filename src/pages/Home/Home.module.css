@@ -1,8 +1,8 @@
 /* HOME PAGE HERO STARTS */
 
-@media screen and (min-width: 480px) {
+@media screen {
   .home-hero {
-    width: 90%;
+    width: 80%;
     height: fit-content;
     justify-content: space-between;
     align-items: center;

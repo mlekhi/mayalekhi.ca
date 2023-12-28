@@ -5,6 +5,8 @@ getting the links in the projects page to work
 
 future updates:
 i dislike the gallery page
+    GALLERY PAGE IDEA: turn it into a things i care about page, can be a bit more artsy with the UI
+    focuses - writing, community, technology
 make footer -- link it to the open source
 make notes page
 replace the animation on the nav bar so its not that spinny thing
