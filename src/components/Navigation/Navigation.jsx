@@ -75,9 +75,9 @@ const Navigation = () => {
           <Icons.CV />
         </motion.a>
       </div>
-      <div className={"nav-bar float-middle"}>
+      <div className={"nav-bar float-middle"} style={{ border: "none" }}>
         <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/Gallery">Gallery</CustomLink>
+        <CustomLink to="/About">About</CustomLink>
         <CustomLink to="/Projects">Projects</CustomLink>
       </div>
     </div>

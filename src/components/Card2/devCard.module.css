@@ -1,3 +1,4 @@
+@media screen {
 .card {
     max-width: 475px; 
     border-radius: 32px;
@@ -88,3 +89,9 @@
   h5 {
     font-weight: 400;  
   }
+}
+
+
+@media screen and (max-width: 480px) {
+
+}

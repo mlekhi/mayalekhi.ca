@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Home.module.css";
-import * as Img from "./images";
 import { motion } from "framer-motion";
-import Card from "../../components/Card/Card";
 import mixpanel from "mixpanel-browser";
 
 mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
@@ -11,13 +9,20 @@ mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   ignore_dnt: true,
 });
 
-const CustomLink = ({ onClick, children, props }) => {
+const CustomLink = ({ children, onClick }) => {
+  const handleClick = () => {
+    onClick();
+  };
+
+  const justifyOptions = ["flex-start", "center", "flex-end"]; 
+  const randomJustify = justifyOptions[Math.floor(Math.random() * justifyOptions.length)];
+
   return (
-    <div onClick={onClick} {...props}>
+    <div onClick={handleClick} style={{ display: 'flex', justifyContent: randomJustify, alignItems: 'center'}}>
       <motion.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className={`nav-item`}
+        className="body-item"
       >
         <p>{children}</p>
       </motion.div>
@@ -32,66 +37,46 @@ function Home() {
   };
 
   useEffect(() => {
-    mixpanel.track("View on Home");
+    mixpanel.track("Page Viewed");
   }, []);
 
-  const [cardsShown, setCardsShown] = useState("past");
+  const linkSets = {
+    SoftwareEngineer: [
+      "/Projects",
+      "https://github.com/mlekhi",
+    ],
+    Researcher: [
+      "https://castellanilab.com/members/",
+      "https://csfjournal.com/volume-5-issue-2/2022/10/26/tackling-canadas-discriminatory-water-crisis-optimizing-scoby-biofilms-to-develop-renewable-living-filter-membranes",
+    ],
+    Poet: [
+      "https://www.notion.so/maya-lekhi/Tainted-59224276092a4808998521ae5ba01e1b?pvs=4",
+      "https://www.notion.so/maya-lekhi/Interprovincial-cc56a4590c5a4ca9b1e203a5972f94e6?pvs=4",
+      "https://www.notion.so/maya-lekhi/A-Reminder-of-Affection-ead2cb0c62694e45a641c1e9bc4d12d1?pvs=4",
+      "https://www.notion.so/maya-lekhi/Tikka-127b0bd05eeb42d0bc384dc8d70a5171?pvs=4",
+      "https://www.notion.so/maya-lekhi/Smoke-Rising-1378ff0c26a045e58c464c24409adbf7?pvs=4",
+    ],
+    Founder: [
+      "/About",
+    ],
+    CommunityBuilder: [
+      "https://www.socratica.info",
+      "https://lu.ma/moment.um",
+      "https://www.foundersnetwork.ca",
+      "https://www.project5k.ca",
+    ],
+  };
 
-  const cardsPresent = [
-    {
-      url: "https://www.td.com/ca/en/personal-banking",
-      image: Img.TDCard,
-      orgName: "TD Bank",
-      positionName: "Technology Operations",
-    },
-    {
-      url: "https://castellanilab.com",
-      image: Img.CastellaniCard,
-      orgName: "Castellani Lab",
-      positionName: "Bioinformatics Research",
-    },
-    {
-      url: "https://www.foundersnetwork.ca",
-      image: Img.WFNCard,
-      orgName: "WFN | Western's Entrepreuneurial Society",
-      positionName: "Future View President",
-    },
-    {
-      url: "https://www.rbcroyalbank.com",
-      image: Img.RBCCard,
-      orgName: "RBC",
-      positionName: "Innovation and Design",
-    },
-  ];
+  const getRandomLink = (key) => {
+    const links = linkSets[key];
+    const randomIndex = Math.floor(Math.random() * links.length);
+    return links[randomIndex];
+  };
 
-  const cardsPast = [
-    {
-      url: "https://opensource.fb.com/partnerships/major-league-hacking/",
-      image: Img.MetaCard,
-      orgName: "Meta & Major League Hacking | Technology",
-      positionName: "Site Reliability Engineer ['23]",
-    },
-    {
-      url: "https://algifoods.com",
-      image: Img.AlgiCard,
-      orgName: "Algi | Food with Impact",
-      positionName: "Growth Strategy ['22]",
-    },
-    {
-      url: "https://www.project5k.ca",
-      image: Img.P5KCard,
-      orgName: "Project 5K | Meaningful Youth Volunteerism",
-      positionName: "President ['21-'22]",
-    },
-    {
-      url: "https://www.linkedin.com/company/mastery-tutoring-services",
-      image: Img.MTSCard,
-      orgName: "Mastery Tutoring Services | Education",
-      positionName: "Founder ['19-'22]",
-    },
-  ];
-
-  const cardsCur = cardsShown === "past" ? cardsPresent : cardsPast;
+  const handleLinkClick = (key) => {
+    const randomLink = getRandomLink(key);
+    window.open(randomLink, "_blank");
+  };
 
   return (
     <div className={"content-body"}>
@@ -103,94 +88,34 @@ function Home() {
         <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
           <div className="header-container">
             <h2>Hi! I'm Maya Lekhi.</h2>
-            <h3 class="colored">Software Engineer, Researcher, Founder</h3>
-          </div>
-          <p>
-            I am a driven second-year Computer Science student at Western University.
-            I’m extremely passionate about tech, social impact, 
-            writing, and nurturing communities! <br />
-            <br />
-            Currently, I'm leading Western University's largest conference on emerging technology at {" "}
-            <a target="_blank" href="https://www.foundersnetwork.ca">
-              Western Founder's Network, 
-            </a> Western's entrepreneurship society. 
-            <br />
-            <br />
-            On top of this, I have been building Momentum: a coworking community bringing together Western University's builders, 
-            creatives, technologists, budding founders, and more, to work on and showcase their passion projects. 
-            It's a space that provides youth with the permission, accountability, and community to dedicate themselves to work they care about. 
-            <br />
-            <br />
-            When I'm not working to support youth in their passions, I'm busy pursuing my own!
-            You can usually find me playing Pokémon, making Spotify playlists, competing in hackathons, 
-            meeting exceptional people, and building new things.
-          </p>
-          <div className={styles["button-container"]}>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              variants={iconAnimate}
-              className={styles["button"]}
-              target="_blank"
-              href="mailto: maya.lekhi1@gmail.com"
-            >
-              <p>Email Me!</p>
-            </motion.a>
+            <CustomLink onClick={() => handleLinkClick("SoftwareEngineer")}>
+              Software Engineer
+            </CustomLink>
+            <CustomLink onClick={() => handleLinkClick("Researcher")}>
+              Researcher
+            </CustomLink>
+            <CustomLink onClick={() => handleLinkClick("Poet")}>
+              Poet
+            </CustomLink>
+            <CustomLink onClick={() => handleLinkClick("Founder")}>
+              Founder
+            </CustomLink>
+            <CustomLink onClick={() => handleLinkClick("CommunityBuilder")}>
+              Community-Builder
+            </CustomLink>
+            <div className={styles["button-container"]}>
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                variants={iconAnimate}
+                className={styles["button"]}
+                href="/Home"
+              >
+                <p>About Me</p>
+              </motion.a>
+            </div>
           </div>
         </div>
-      </div>
-      <div className={"nav-bar"}>
-        <CustomLink
-          variants={iconAnimate}
-          onClick={() => setCardsShown("past")}
-          className={`${styles["button"]} ${
-            cardsShown == "[present]" ? styles["button-active"] : ""
-          }`}
-        >
-          Present
-          <span
-            style={{
-              paddingLeft: "0.5rem",
-              fontSize: "8pt",
-              alignSelf: "center",
-            }}
-          >
-            ({cardsPresent.length})
-          </span>
-        </CustomLink>
-        <CustomLink
-          variants={iconAnimate}        
-          onClick={() => setCardsShown("present")}
-          className={`${styles["button"]} ${
-            cardsShown == "[past]" ? styles["button-active"] : ""
-          }`}
-        >
-          Past
-          <span
-            style={{
-              paddingLeft: "0.5rem",
-              fontSize: "8pt",
-              alignSelf: "center",
-            }}
-          >
-            ({cardsPast.length})
-          </span>
-        </CustomLink>
-      </div>
-      <div className={"gallery"}>
-        {cardsCur.map((card, index) => {
-          return (
-            <Card
-              key={index}
-              url={card.url}
-              image={card.image}
-              title={card.orgName}
-              desc={card.positionName}
-            />
-          );
-        })}
-      </div>
-      <div className={"content-body"}>
       </div>
     </div>
   );

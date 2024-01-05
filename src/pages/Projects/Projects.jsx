@@ -2,10 +2,17 @@ import styles from "./Projects.module.css";
 import { Link } from 'react-router-dom';
 import DevCard from "../../components/Card2/devCard";
 import { projects } from "./projectList";
+import mixpanel from "mixpanel-browser";
 
-export default function Dev() {
+mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
+  debug: true,
+  persistence: "localStorage",
+  ignore_dnt: true,
+});
+
+export default function Projects() {
   return (
-    <main className={styles.main}>
+    <main>
       <div className={styles.projects}>
         <div className={styles.header}>
           <h1>I develop with purpose.</h1>

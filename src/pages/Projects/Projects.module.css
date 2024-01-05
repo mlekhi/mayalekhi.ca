@@ -1,85 +1,112 @@
-* {
-  margin: 0;
-  padding: 0;
+@media screen {
+  * {
+    margin: 0;
+    padding: 0;
 
-  box-sizing: border-box;
-  /* border: 0.1px solid rgba(255, 0, 0, 0.25) !important; */
-  background: none;
-  color: #dedede;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 14pt;
-  font-weight: 600;
-  text-decoration: none;
+    box-sizing: border-box;
+    background: none;
+    color: #dedede;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 42pt;
+  }
+
+  h2 {
+    font-size: 25pt;
+    font-weight: 600;  
+  }
+
+  h5 {
+    font-weight: 400;  
+  }
+
+  .galleryTitle {
+    display: flex;
+    height: fit-content;
+    width: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgGallery img {
+    max-height: 280px; 
+    width: auto; 
+    object-fit: contain;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.393);
+    border-radius: 1rem;
+    transition: transform 0.5s ease; 
+  }
+
+  .imgGallery img:hover {
+    transform: scale(1.05);
+  }
+
+  .imgGallery {
+    width: 100%; /* Adjusted to fit the viewport width */
+    max-width: 100%;
+    height: 300px;
+
+    display: flex;
+
+    align-items: center;
+    gap: 1rem;
+
+    position: relative;
+    overflow-x: auto; /* Use auto to show scrollbar only if content exceeds the viewport width */
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 32px;
+  }
+
+  .header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 36px;
+  }
+
+  .devGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
 }
 
-h1 {
-  font-size: 42pt;
-}
+@media screen and (max-width: 480px) {
+  .imgGallery {
+    height: auto; /* Adjust height to adapt to the content */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  }
 
-h2 {
-  font-size: 25pt;
-  font-weight: 600;  
-}
+  .imgGallery img {
+    max-width: 100%; /* Ensure images scale down to fit their container */
+  }
 
-h5 {
-  font-weight: 400;  
-}
+  .projects {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
 
-.galleryTitle {
-  display: flex;
-  height: fit-content;
-  width: 1em;
-  align-items: center;
-  justify-content: center;
-}
+  .header {
+    width: 90%;
+    margin-bottom: 24px;
+  }
 
-.imgGallery img {
-  min-height: 280px; 
-  max-height: 280px; 
-  width: auto; 
-  object-fit: contain;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.393);
-  border-radius: 1rem;
-  transition: transform 0.5s ease; 
-}
-
-.imgGallery img:hover {
-  transform: scale(1.05);
-}
-
-.imgGallery {
-  width: calc(100vw - 2.2% - 2rem);
-  height: 300px;
-
-  display: flex;
-  flex-direction: row;
-
-  align-items: center;
-  gap: 1rem;
-
-  position: relative;
-  overflow-x: scroll;
-  left: 0;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: auto;
-  gap: 32px;
-}
-
-.header {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin-bottom: 36px;
-}
-
-.devGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  .devGrid {
+    grid-template-columns: 1fr; /* Display a single column on smaller screens */
+  }
 }
