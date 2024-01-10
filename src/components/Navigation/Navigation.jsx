@@ -64,16 +64,6 @@ const Navigation = () => {
         >
           <Icons.Email />
         </motion.a>
-        <motion.a
-          whileHover="hover"
-          whileTap="click"
-          variants={iconAnimate}
-          className={"nav-icon"}
-          target="_blank"
-          href="https://docs.google.com/document/d/e/2PACX-1vSP-Ii-v5ECSeZNiqs3_WH9rcnGRknkzg2coSTfQcG99QXpinfViivDJrSqbnOS5Q/pub"
-        >
-          <Icons.CV />
-        </motion.a>
       </div>
       <div className={"nav-bar float-middle"} style={{ border: "none" }}>
         <CustomLink to="/">Home</CustomLink>

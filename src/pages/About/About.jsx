@@ -113,18 +113,6 @@ function Home() {
             You can usually find me playing Pokémon, making Spotify playlists, competing in hackathons, 
             meeting exceptional people, and building new things.
           </p>
-          <div className={styles["button-container"]}>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              variants={iconAnimate}
-              className={styles["button"]}
-              target="_blank"
-              href="mailto: maya.lekhi1@gmail.com"
-            >
-              <p>Email Me!</p>
-            </motion.a>
-          </div>
         </div>
       </div>
       <div className={"nav-bar"} style={{ border: "none" }}>

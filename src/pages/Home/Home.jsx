@@ -110,9 +110,9 @@ function Home() {
                 whileTap={{ scale: 0.95 }}
                 variants={iconAnimate}
                 className={styles["button"]}
-                href="/About"
+                href="mailto:maya.lekhi1@gmail.com"
               >
-                <p>About Me</p>
+                <p>Email Me</p>
               </motion.a>
             </div>
           </div>
