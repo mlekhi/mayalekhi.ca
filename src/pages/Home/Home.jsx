@@ -28,7 +28,7 @@ const CustomLink = ({ children, onClick }) => {
       </motion.div>
     </div>
   );
-};
+}
 
 function Home() {
   const iconAnimate = {
@@ -48,6 +48,7 @@ function Home() {
     Researcher: [
       "https://castellanilab.com/members/",
       "https://csfjournal.com/volume-5-issue-2/2022/10/26/tackling-canadas-discriminatory-water-crisis-optimizing-scoby-biofilms-to-develop-renewable-living-filter-membranes",
+      "https://urncst.com/index.php/urncst/article/view/537/299",
     ],
     Poet: [
       "https://www.notion.so/maya-lekhi/Tainted-59224276092a4808998521ae5ba01e1b?pvs=4",
@@ -109,7 +110,7 @@ function Home() {
                 whileTap={{ scale: 0.95 }}
                 variants={iconAnimate}
                 className={styles["button"]}
-                href="/Home"
+                href="/About"
               >
                 <p>About Me</p>
               </motion.a>

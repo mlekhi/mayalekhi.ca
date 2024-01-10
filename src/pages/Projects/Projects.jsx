@@ -37,9 +37,8 @@ export default function Projects() {
               />
             ) : (
               <Link
-                href={`/dev/${encodeURIComponent(project.title)}`}
+                to={`/dev/${encodeURIComponent(project.title)}`}
                 key={project.title}
-                passHref
               >
                 <DevCard
                   title={project.title}

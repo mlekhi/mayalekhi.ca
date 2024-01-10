@@ -1,26 +1,30 @@
-import React, { useEffect, useState } from "react";
-import { projects } from "../Projects";
-import styles from "./Project.module.css";
-import Link from "next/link";
-import Image from "next/image";
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import styles from './Project.module.css';
+import { projects } from '../projectList';
 
-export default function Project({ params }) {
+export default function Project(props) {
+  const { project: projectParam } = useParams();
   const [project, setProject] = useState(null);
 
   useEffect(() => {
-    const projectTitle = decodeURIComponent(params.project);
+    if (projectParam) {
+      const projectTitle = decodeURIComponent(projectParam);
+      const foundProject = projects.find((p) => p.title === projectTitle);
 
-    const foundProject = projects.find((p) => p.title === projectTitle);
-    setProject(foundProject || null);
-  }, [params]);
+      setProject(foundProject || null);
+    }
+  }, [projectParam]);
 
-  if (!project) return <p></p>;
+  if (!project) return <p>Error: Project not found.</p>;
+
+  console.log(`${project.imageURL}`)
 
   return (
     <div className={styles.main}>
       <div className={styles.navWrap}></div>
       <div className={styles.header}>
-        <Link href={"/Projects"} className={styles.backlink}>
+        <Link to="/Projects" className={styles.backlink}>
           <p className={styles.backarrow}>{"<- "}</p>
           <p>Back to Projects</p>
         </Link>
@@ -28,7 +32,7 @@ export default function Project({ params }) {
         <div className={styles.flex}>
           <div>
             <img
-              src={project.imageURL}
+              src={`/${project.imageURL}`}
               alt={project.title}
               className={styles.projectImg}
             />
@@ -41,7 +45,7 @@ export default function Project({ params }) {
                   className={styles.projectLink}
                 >
                   {link.site}
-                  <Image
+                  <img
                     src="/arrow.svg"
                     alt="->"
                     width={28}
