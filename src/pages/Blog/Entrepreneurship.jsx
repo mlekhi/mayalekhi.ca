@@ -65,7 +65,7 @@ function Home() {
               <br/>
               <br/>
               <p><i>How to bridge this?  </i>  This is something that I’ve built Momentum specifically to combat. We are a coworking community designed to provide accountability sessions tailored for passionate people to get work done on the projects they care about. Recently, we have been collaborating with VCs to provide ‘leap of faith’ grants for new builders. I find this concept especially important as this little investment is exactly what I've seen propel some of the most talented builders. It just takes a little nudge. If you’re reading this and feel like you have an interesting project, I would love to hear it and propel you as much as I possibly can. </p>
-              <p>On top of this, Iʼve been discussing with Morrissette to make Momentum a space where everyone interacting with Morissette can come together and feed each otherʼs passions, thus redirecting traffic overloads away from Morrissette's entrepreneurship advisors while still retaining this talent.</p>
+              <p>Additionally, I've been in discussions with Morrissette to transform Momentum into a space where everyone engaging with their programming can gather and nurture each other's passions. This aims to alleviate traffic overload from Morrissette's entrepreneurship advisors while retaining all these talented individuals.</p>
               <br/>
               <br/>              <br/>
 
