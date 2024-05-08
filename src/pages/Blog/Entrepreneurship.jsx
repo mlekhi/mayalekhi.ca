@@ -66,7 +66,8 @@ function Home() {
 <p>As a result, their fantastic ideas remain just that: ideas.</p>
 
               <br/>
-              <p><i>How to bridge this?  </i>  This is something that I’ve built Momentum specifically to combat. We are a coworking community designed to provide accountability sessions tailored for passionate people to get work done on the projects they care about. Recently, we have been collaborating with VCs to provide ‘leap of faith’ grants for new builders. I find this concept especially important as this little investment is exactly what I've seen propel some of the most talented builders. It just takes a little nudge. If you’re reading this and feel like you have an interesting project, I would love to hear it and propel you as much as I possibly can. </p>
+              <p><i>How to bridge this?  </i>  This is something that I’ve built Momentum specifically to combat. We are a coworking community designed to provide accountability sessions tailored for passionate people to pursue the projects they care about. No school allowed. Recently, we have been collaborating with VCs to provide ‘leap of faith’ grants for new builders. I find this concept especially important as this little investment is exactly what I've seen propel some of the most talented builders and founders. It just takes a little nudge.</p>
+              <p>If you’re reading this and feel like you have an interesting project, I would love to hear it and propel you as much as I possibly can. </p>
               <br/>
  <p>Additionally, I've been in discussions with Morrissette to transform Momentum into a space where everyone engaging with their programming can gather and nurture each other's passions. This aims to alleviate traffic overload from Morrissette's entrepreneurship advisors while retaining all these talented individuals.</p>
               <br/>
