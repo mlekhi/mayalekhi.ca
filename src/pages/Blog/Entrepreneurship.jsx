@@ -47,7 +47,9 @@ function Home() {
               <br/>
               <br/>
               <p>Western has no shortage of entrepreneurial communities. Clubs like W5, WFN, Hult, and more are all vital touchpoints for students. Many students, including myself, will find these clubs quickly after accepting their offer to Western University through Instagram or Google searches, as they are the most student-accessible gateways to Western’s entrepreneurial community.</p>
+              <br/>
               <p>However, lately, I find student entrepreneurial communities have been straying from many of their original events (e.g. incubators, fireside chats) in favour of more popular events that may be less directly related to entrepreneurship (e.g. consulting competitions, office tours). This is understandable; these events are more lucrative, and stand to boost their popularity on campus. However, there has to be a reason these clubs were formed in the name of entrepreneurship in the first place. I think all these clubs need is a little bit of reminding.</p>
+              <br/>
               <p>From an individual perspective, this landscape results in a lot of difficulties meeting fellow founders, nurturing individual's entrepreneurial drive, and fostering a closely knit entrepreneurship scene where we inspire one another. I have been trying to bridge this disconnect as an individual; however, there is a deep need for some structural changes to take place. </p>
               <br/>
 
@@ -60,12 +62,14 @@ function Home() {
               <br/>
               <br/>
               <p>I've talked to a lot of students with crazy potential. A common answer that I hear from why they shy away from entrepreneurship as a viable career is uncertainty. Uncertainty in the value of their ideas, lack of confidence in their abilities, risk of failure, and more. These barriers are preventing a significant portion of the talent at Western from overcoming the stigma associated with entrepreneurship and going all in on their ideas.</p>
-              <p>As a result, their fantastic ideas remain just that: ideas.</p>
+              <br/>
+<p>As a result, their fantastic ideas remain just that: ideas.</p>
 
               <br/>
               <br/>
               <p><i>How to bridge this?  </i>  This is something that I’ve built Momentum specifically to combat. We are a coworking community designed to provide accountability sessions tailored for passionate people to get work done on the projects they care about. Recently, we have been collaborating with VCs to provide ‘leap of faith’ grants for new builders. I find this concept especially important as this little investment is exactly what I've seen propel some of the most talented builders. It just takes a little nudge. If you’re reading this and feel like you have an interesting project, I would love to hear it and propel you as much as I possibly can. </p>
-              <p>Additionally, I've been in discussions with Morrissette to transform Momentum into a space where everyone engaging with their programming can gather and nurture each other's passions. This aims to alleviate traffic overload from Morrissette's entrepreneurship advisors while retaining all these talented individuals.</p>
+              <br/>
+ <p>Additionally, I've been in discussions with Morrissette to transform Momentum into a space where everyone engaging with their programming can gather and nurture each other's passions. This aims to alleviate traffic overload from Morrissette's entrepreneurship advisors while retaining all these talented individuals.</p>
               <br/>
               <br/>              <br/>
 
