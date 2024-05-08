@@ -1,10 +1,8 @@
 current problems:
-getting the links in the projects page to work
 mobile layout
 make footer -- link it to the open source
-stuff is wrong with mixpanel
+i dont like the grey anymore
 
 future updates:
+stuff is wrong with mixpanel
 make notes page
-replace the animation on the nav bar so its not that spinny thing
-get mayalekhi.ca domain name working

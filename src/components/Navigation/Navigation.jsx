@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const iconAnimate = {
-    hover: { rotate: 360, transition: { ease: "easeOut", duration: 0.6 } },
-    click: { rotate: 0, transition: { ease: "easeOut", duration: 0.6 } },
+    hover: { scale: 1.25, transition: { ease: "easeOut", duration: 0.6 } },
+    click: { transition: { ease: "easeOut", duration: 0.6 } },
   };
 
   const CustomLink = ({ to, children, props }) => {
