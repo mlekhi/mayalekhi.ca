@@ -54,9 +54,9 @@ function Home() {
               <br/>
 
               <p><i>How to bridge this?  </i>  There needs to a unifying thread between these entrepreneurial organizations. Just as structures for individual accountability are important, large organizations like student clubs can benefit from each other's direction and drive towards building tomorrow's entrepreneurs. I think that Morrissette is perfectly positioned to help achieve this. Morrissette has a wealth of resources for Western entrepreneurs, from advisors to pitch competitions to mentors. The one thing they need more of is exposure to students, which is exactly what these clubs have. A crucial next step for both organizations would be to join forces, where Morrissette provides further resources to these student organizations, while they serve as a funnel directing entrepreneurial potential to the right place to grow.</p>
-<br/>
-<br/>
-<br/>
+              <br/>
+              <br/>
+              <br/>
 
               <b>Ideation Support</b>
               <br/>
@@ -65,7 +65,6 @@ function Home() {
               <br/>
 <p>As a result, their fantastic ideas remain just that: ideas.</p>
 
-              <br/>
               <br/>
               <p><i>How to bridge this?  </i>  This is something that I’ve built Momentum specifically to combat. We are a coworking community designed to provide accountability sessions tailored for passionate people to get work done on the projects they care about. Recently, we have been collaborating with VCs to provide ‘leap of faith’ grants for new builders. I find this concept especially important as this little investment is exactly what I've seen propel some of the most talented builders. It just takes a little nudge. If you’re reading this and feel like you have an interesting project, I would love to hear it and propel you as much as I possibly can. </p>
               <br/>
@@ -78,11 +77,12 @@ function Home() {
               <br/>
               <p>Disclaimer: I write this last point with a touch of selfishness, coming from my background as a tech founder and software engineer. </p>
               <br/>
-    <p>The reality is that the vast majority of founders that come out of this school lie in the CPG/manufacturing space. It makes a lot of sense considering Western's status as a renowned business school and assignments like the 2257 Feasibility project that force students to immerse themselves in the possibility of building a production enterprise. This leaves tech founders like myself turning our gaze to schools like Waterloo, with a big tech entrepreneurship scene, and often dropping out or trying to transfer. For people like myself, this is simply not realistic. </p>
+    <p>The reality is that the vast majority of founders that come out of Western University lie in the CPG/manufacturing space. It makes a lot of sense considering Western's status as a renowned business school and assignments like the 2257 Feasibility project that force students to immerse themselves in the possibility of building a production enterprise. This leaves tech founders like myself turning our gaze to schools with a big tech entrepreneurship scene like Waterloo, and often dropping out or trying to transfer. For people like myself, this is simply not realistic. </p>
               <br/>
   <p><i>How to bridge this?  </i>  This is one I plan to take on myself. I hope to lead by example by furthering my relentless pursuit to be a successful founder. I've had entrepreneurial experience in social impact fields (see: <a href='https://westerngazette.ca/news/campus/usc-to-add-in-app-waste-sorting-page-collaborates-with-student-group/article_9ef62de4-8245-11ee-bf9c-f38039b5a84d.html'>Greensort</a>, <a href='https://www.project5k.ca/'>Project 5K</a>), though in the long-term, I aim to develop successful tech companies as a technical founder. I'm working on this as we speak through building my first SaaS startup: Papertrail, an expense management tool for non-profits. However, this is my long-term vision taking over. In the short term, I've been supporting individual tech founders (shoutout Robin, Ryan, and more!).</p>
   <br/>
   <p>There is definitely more to be done. Going forward, I hope to see more engagement with successful Western alum in tech startups (e.g. Y-Combinator grads, talented CEOs like Braden Ream, etc.) to serve as inspiration for Western tech students show them that flocking to bigger tech hubs is not the only answer.</p>
+              <br/>
               <br/>
               <br/>
               <br/>
