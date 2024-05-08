@@ -35,7 +35,7 @@ function Home() {
               <h3>Entrepreneurship @ Western University</h3>
               <br/>
               <br/>
-              <p>My experience as a founder at Western University has not always been smooth sailing. I spent my first year of university feeling quite disconnected from the entrepreneurial scene, and spent the majority of my second year fighting to give budding entrepreneurs the support that I wish I had. </p>
+              <p>My experience as a founder at Western University has not always been smooth sailing. I spent my first year of university feeling quite disconnected from the entrepreneurial scene, and spent the majority of my second year advocating for budding entrepreneurs and providing them the support that I wish I had. </p>
               <br/>
               <p>As a result, I’ve developed a critical lens on the areas of need in Western’s current entrepreneurial ecosystem and have become empowered to address them. This post is my vision of how I hope to see entrepreneurship at Western to grow over the next 3-5 years, as well as strategy for how we can make this happen.</p>
               <br/>
@@ -53,7 +53,7 @@ function Home() {
               <p>From an individual perspective, the current landscape results in a lot of difficulties meeting fellow founders, nurturing individual's entrepreneurial drive, and fostering a closely knit entrepreneurship scene where we inspire one another. I have been trying to bridge this disconnect as an individual; however, there is a deep need for some structural changes to take place. </p>
               <br/>
 
-              <p><i>How to bridge this?  </i>  There needs to a unifying thread between these entrepreneurial organizations. Just as structures for individual accountability are important, large organizations like student clubs can benefit from each other's direction and drive towards building tomorrow's entrepreneurs. I think that Morrissette is perfectly positioned to help achieve this. Morrissette has a wealth of resources for Western entrepreneurs, from advisors to pitch competitions to mentors. The one thing they need more of is exposure to students, which is exactly what these clubs have. A crucial next step for both organizations would be to join forces, where Morrissette provides further resources to these student organizations, while they serve as a funnel directing entrepreneurial potential to the right place to grow.</p>
+              <p><i>How to bridge this?  </i>  There needs to a unifying thread between these entrepreneurial organizations. Just as structures for individual accountability are important, large organizations like student clubs can benefit from each other's direction and drive towards building tomorrow's entrepreneurs. I think that Morrissette is perfectly positioned to help achieve this. Morrissette has a wealth of resources for Western entrepreneurs, from advisors to pitch competitions to mentors. The one thing they need more of is exposure to students, which is exactly what these clubs have. A crucial next step for both organizations would be to establish a symbiotic relationship, where Morrissette provides further resources to these student organizations, while they serve as a funnel directing entrepreneurial potential to the right place to grow.</p>
               <br/>
               <br/>
               <br/>
@@ -61,7 +61,7 @@ function Home() {
               <b>Ideation Support</b>
               <br/>
               <br/>
-              <p>I've talked to a lot of students with crazy potential. A common answer that I hear from why they shy away from entrepreneurship as a viable career is uncertainty. Uncertainty in the value of their ideas, lack of confidence in their abilities, risk of failure, and more. These barriers are preventing a significant portion of the talent at Western from overcoming the stigma associated with entrepreneurship and going all in on their ideas.</p>
+              <p>I've talked to a lot of students with crazy potential. A common answer that I hear from why they shy away from entrepreneurship as a viable career is uncertainty—uncertainty about the value of their ideas, lack of confidence in their abilities, fear of failure, and more. These barriers are preventing a significant portion of the talent at Western from overcoming the stigma associated with entrepreneurship and going all in on their ideas.</p>
               <br/>
 <p>As a result, their fantastic ideas remain just that: ideas.</p>
 

@@ -33,6 +33,11 @@ function Home() {
             <br/>
             <div>
               <h3>My Priorities — Summer 2024</h3>
+              <br></br>
+              <br></br>
+              <i>Some jot notes on pushing myself to become a better founder</i>
+              <br></br>
+              <br></br>
               <p>Becoming the best software engineer & technical founder as possible</p>
               <p>&emsp;Learn how to build simple LLMs on PyTorch</p>
               <p>&emsp;Succeed in my work at BorealisAI & understand the pain points of infrastructure engineers</p>
