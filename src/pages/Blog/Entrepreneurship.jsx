@@ -39,7 +39,7 @@ function Home() {
               <br/>
               <p>As a result, I’ve developed a critical lens on the areas of need in Western’s current entrepreneurial ecosystem and have become empowered to address them. This post is my vision of how I hope to see entrepreneurship at Western to grow over the next 3-5 years, as well as strategy for how we can make this happen.</p>
               <br/>
-              <p>This is a working document, so I would appreciate any comments or feedback!!</p>
+              <p>This is a working document, so I would appreciate any comments or feedback!! The last thing I mean to be is prescriptive with these thoughts :)</p>
               <br/>              <br/>
 
               <br/>
@@ -72,7 +72,7 @@ function Home() {
               <b>Bonus: Western's Tech Scene</b>
               <br/>
               <br/>
-              <p>This last one I write a bit selfishly as a tech founder and software engineer. Because Western is known for being a fantastic business school, the reality is that the vast majority of founders that come out of this school lie in the CPG/manufacturing space. This leaves tech founders like myself looking forelorn to schools like Waterloo, with a big tech entrepreneurship scene, and often dropping out or trying to transfer. For people like myself, this is simply not realistic. </p>
+              <p>I write this last point with a touch of selfishness, coming from my background as a tech founder and software engineer. Because Western is known for being a fantastic business school, the reality is that the vast majority of founders that come out of this school lie in the CPG/manufacturing space. This leaves tech founders like myself looking forelorn to schools like Waterloo, with a big tech entrepreneurship scene, and often dropping out or trying to transfer. For people like myself, this is simply not realistic. </p>
               <br/>
   <p><i>How to bridge this? </i> This is one I plan to take on myself. I hope to lead by example by furthering my relentless pursuit to be a successful founder. I've had entrepreneurial experience in social impact fields (see: <a href='https://westerngazette.ca/news/campus/usc-to-add-in-app-waste-sorting-page-collaborates-with-student-group/article_9ef62de4-8245-11ee-bf9c-f38039b5a84d.html'>Greensort</a>, <a href='https://www.project5k.ca/'>Project 5K</a>), though in the long-term, I aim to develop successful tech companies as a technical founder. I'm working on this as we speak through building my first SaaS startup: Papertrail, an expense management tool for non-profits. However, this is my long-term vision taking over. In the short term, I hope to see more engagement with successful Western alum tech founders (e.g. Y-Combinator grads or Braden Ream types), to serve as inspiration for Western tech students and show them that flocking to bigger tech hubs is not the only answer.</p>
               <br/>
