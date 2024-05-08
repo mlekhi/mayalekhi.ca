@@ -39,14 +39,14 @@ function Home() {
               <br/>
               <p>As a result, I’ve developed a critical lens on the areas of need in Western’s current entrepreneurial ecosystem and have become empowered to address them. This post is my vision of how I hope to see entrepreneurship at Western to grow over the next 3-5 years, as well as strategy for how we can make this happen.</p>
               <br/>
-              <p>This is a working document, so I would appreciate any comments or feedback!! The last thing I mean to be is prescriptive with these thoughts :)</p>
+              <p>This is a working document, so I would appreciate any comments or feedback!! The last thing I mean to be is prescriptive :)</p>
               <br/>              <br/>
 
               <br/>
               <b>Disconnect in the Student Entrepreneurial Community</b>
               <br/>
               <br/>
-              <p>Western has no shortage of entrepreneurial communities. Clubs like W5, WFN, Hult, and more are all vital touchpoints for students. Many students, including myself, will find these clubs quickly after accepting their offer to Western University through Instagram or Google searches, as they are the most student-accessible gateways to Western’s entrepreneurial community.</p>
+              <p>Western has no shortage of entrepreneurial communities. Clubs like W5, WFN, Hult, and more are all vital hubs for students. Many students, including myself, quickly find these clubs after accepting their offer to Western University through Instagram or Google searches, as they are the primary entry points to Western’s entrepreneurial community.</p>
               <br/>
               <p>However, lately, I find student entrepreneurial communities have been straying from many of their original events (e.g. incubators, fireside chats) in favour of more popular events that may be less directly related to entrepreneurship (e.g. consulting competitions, office tours). This is understandable; these events are more lucrative, and stand to boost their popularity on campus. However, there has to be a reason these clubs were formed in the name of entrepreneurship in the first place. I think all these clubs need is a little bit of reminding.</p>
               <br/>
