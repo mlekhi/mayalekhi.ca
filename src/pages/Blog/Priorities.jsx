@@ -29,6 +29,8 @@ function Home() {
         <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
           <div className="header-container">
             <a href='/blog'>Back</a>
+            <br/>
+            <br/>
             <div>
               <h3>My Priorities — Summer 2024</h3>
               <p>Becoming the best software engineer & technical founder as possible</p>
