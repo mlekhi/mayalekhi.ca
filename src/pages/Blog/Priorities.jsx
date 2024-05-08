@@ -38,7 +38,7 @@ function Home() {
               <i>Some jot notes on pushing myself to become a better founder</i>
               <br></br>
               <br></br>
-              <p>Becoming the best software engineer & technical founder as possible</p>
+              <p>Being a better Software Engineer/Technical Founder</p>
               <p>&emsp;Learn how to build simple LLMs on PyTorch</p>
               <p>&emsp;Succeed in my work at BorealisAI & understand the pain points of infrastructure engineers</p>
               <p>PaperTrail</p>
