@@ -37,7 +37,9 @@ function Home() {
               <br/>
               <p>My experience as a founder at Western University has not always been smooth sailing. I spent my first year of university feeling quite disconnected from the entrepreneurial scene, and spent the majority of my second year fighting to give budding entrepreneurs the support that I wish I had. </p>
               <br/>
-              <p>As a result, I feel as though I’ve gained a critical lens on what changes I believe need to happen in Western’s entrepreneurial ecosystem. This post is my vision of how I hope entrepreneurship at Western will grow over the next 3-5 years, as well as strategy for how I hope to help make that happen. This is a working document, so I would appreciate any comments or feedback!!</p>
+              <p>As a result, I’ve developed a critical lens on the areas of need in Western’s current entrepreneurial ecosystem and have become empowered to address them. This post is my vision of how I hope to see entrepreneurship at Western to grow over the next 3-5 years, as well as strategy for how we can make this happen.</p>
+              <br/>
+              <p>This is a working document, so I would appreciate any comments or feedback!!</p>
               <br/>              <br/>
 
               <br/>
