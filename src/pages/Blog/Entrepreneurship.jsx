@@ -60,6 +60,7 @@ function Home() {
               <br/>
               <br/>
               <p>I've talked to a lot of students with crazy potential. A common answer that I hear from why they shy away from entrepreneurship as a viable career is uncertainty. Uncertainty in the value of their ideas, lack of confidence in their abilities, risk of failure, and more. These barriers are preventing a significant portion of the talent at Western from overcoming the stigma associated with entrepreneurship and going all in on their ideas.</p>
+              <p>As a result, their fantastic ideas remain just that: ideas.</p>
 
               <br/>
               <br/>
