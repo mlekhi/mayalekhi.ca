@@ -46,7 +46,7 @@ function Home() {
               <b>Disconnect in the Student Entrepreneurial Community</b>
               <br/>
               <br/>
-              <p>Western has no shortage of entrepreneurial communities. Clubs like W5, WFN, Hult, and more are all vital hubs for students. Many students, including myself, quickly find these clubs after accepting their offer to Western University through Instagram or Google searches, as they are the primary entry points to Western’s entrepreneurial community.</p>
+              <p>Western has no shortage of entrepreneurial communities. Clubs like W5, WFN, Hult, and more are all vital hubs for students. Many students, including myself, quickly find these clubs after accepting their offer to Western University through Instagram or Google searches. They are the primary entry points to Western’s student entrepreneurial community.</p>
               <br/>
               <p>Lately, I see a trend where student entrepreneurial clubs have been straying from their flagship events (e.g. incubators, fireside chats) in favour of more popular events that may be less directly related to entrepreneurship (e.g. consulting competitions, office tours). This is understandable; these newer events can be lucrative and stand to boost their popularity on campus. However, there was a reason these clubs were formed in the name of entrepreneurship in the first place and I think all they need now is a little bit of reminding.</p>
               <br/>
