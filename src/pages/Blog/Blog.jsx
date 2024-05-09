@@ -36,6 +36,8 @@ function Home() {
               <br/>
               <a href="/blog/uwo">Entrepreneurship @ Western University</a>
               <br/>
+              <br/>
+              <a href="/blog/community">Community-Building: My Learnings</a>
             </div>
           </div>
         </div>
