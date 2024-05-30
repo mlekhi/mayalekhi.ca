@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DevCard from "../../components/Card2/devCard";
 import { projects } from "./projectList";
 import mixpanel from "mixpanel-browser";
+import Footer from "../../components/Footer/Footer.jsx";
 
 mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   debug: true,
@@ -45,13 +46,14 @@ export default function Projects() {
                   description={project.description}
                   tags={project.tags}
                   imageURL={project.imageURL}
-                  colour={project.colour}
+                  colour={"#e4e0fa"}
                   disabled={project.disabled}
                 />
               </Link>
             )
           )}
         </div>
+        <Footer />
       </div>
     </main>
   );

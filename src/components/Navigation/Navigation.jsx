@@ -1,6 +1,6 @@
 import React from "react";
 import * as Icons from "./icons";
-import styles from "./Navigation.module.css";
+import styles from "./Navigation.module.css"; // Import CSS module correctly
 import { motion } from "framer-motion";
 import { useMatch, useResolvedPath } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ const Navigation = () => {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className={isActive ? "nav-item-active" : "nav-item"}
+          className={isActive ? styles["nav-item-active"] : styles["nav-item"]} // Use classNames from the CSS module
         >
           <p>{children}</p>
         </motion.div>
@@ -29,16 +29,21 @@ const Navigation = () => {
   };
 
   return (
-    <div className={"banner"}>
+    <div className={styles.banner}>
       <div>
         <a className={styles.webtitle} href="/">maya lekhi</a>
       </div>
-      <div className={"nav-icons-div"}>
+      <div className={styles["nav-bar"]}>
+        <CustomLink to="/">Home</CustomLink>
+        <CustomLink to="/About">About</CustomLink>
+        <CustomLink to="/Projects">Projects</CustomLink>
+      </div>
+      <div className={styles["nav-icons-div"]}>
         <motion.a
           whileHover="hover"
           whileTap="click"
           variants={iconAnimate}
-          className={"nav-icon"}
+          className={styles["nav-icon"]}
           target="_blank"
           href="https://www.linkedin.com/in/maya-l/"
         >
@@ -48,7 +53,7 @@ const Navigation = () => {
           whileHover="hover"
           whileTap="click"
           variants={iconAnimate}
-          className={"nav-icon"}
+          className={styles["nav-icon"]}
           target="_blank"
           href="https://github.com/mlekhi"
         >
@@ -58,17 +63,12 @@ const Navigation = () => {
           whileHover="hover"
           whileTap="click"
           variants={iconAnimate}
-          className={"nav-icon"}
+          className={styles["nav-icon"]}
           target="_blank"
           href="mailto:maya.lekhi1@gmail.com"
         >
           <Icons.Email />
         </motion.a>
-      </div>
-      <div className={"nav-bar float-middle"} style={{ border: "none" }}>
-        <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/About">About</CustomLink>
-        <CustomLink to="/Projects">Projects</CustomLink>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./Blog.module.css";
 import { motion } from "framer-motion";
 import mixpanel from "mixpanel-browser";
+import Footer from "../../components/Footer/Footer.jsx";
 
 mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   debug: true,

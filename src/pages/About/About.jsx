@@ -4,6 +4,7 @@ import * as Img from "./images";
 import { motion } from "framer-motion";
 import Card from "../../components/Card/Card";
 import mixpanel from "mixpanel-browser";
+import Footer from "../../components/Footer/Footer.jsx";
 
 mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   debug: true,
@@ -88,7 +89,7 @@ function Home() {
       >
         <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
           <div className="header-container">
-            <h3>About Me.</h3>
+            <h1>About Me.</h1>
           </div>
           <p>
             I am a driven second-year Computer Science student at Western University.
@@ -115,7 +116,7 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className={"nav-bar"} style={{ border: "none" }}>
+      <div className={styles["nav-bar"]}>
         <motion.button
           variants={iconAnimate}
           onClick={() => setCardsShown("present")}
@@ -171,6 +172,7 @@ function Home() {
       </div>
       <div className={"content-body"}>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styles from './Project.module.css';
 import { projects } from '../projectList';
+import Footer from "../../../components/Footer/Footer.jsx";
 
 export default function Project(props) {
   const { project: projectParam } = useParams();
@@ -72,6 +73,7 @@ export default function Project(props) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import ThreeScene from "../../components/3D/3d";
+
 import styles from "./Home.module.css";
 import { motion } from "framer-motion";
 import mixpanel from "mixpanel-browser";
+import Footer from "../../components/Footer/Footer.jsx";
 
 mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   debug: true,
@@ -14,17 +17,14 @@ const CustomLink = ({ children, onClick }) => {
     onClick();
   };
 
-  const justifyOptions = ["flex-start", "center", "flex-end"]; 
-  const randomJustify = justifyOptions[Math.floor(Math.random() * justifyOptions.length)];
-
   return (
-    <div onClick={handleClick} style={{ display: 'flex', justifyContent: randomJustify, alignItems: 'center'}}>
+    <div onClick={handleClick}>
       <motion.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="body-item"
       >
-        <p>{children}</p>
+        <p style={{ lineHeight: '2' }}>{children}</p>
       </motion.div>
     </div>
   );
@@ -86,9 +86,11 @@ function Home() {
           styles["home-hero"]
         } ${"flex flex-col-reverse lg:flex-row"}`}
       >
-        <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
-          <div className="header-container">
-            <h2>Hi! I'm Maya Lekhi.</h2>
+        <div className="header-container">
+          <div>
+            <h1>Hi! I'm Maya Lekhi.</h1>
+            <h1 style={{ fontSize: '20pt' }}>psst. the links change!</h1>
+            <br/>
             <CustomLink onClick={() => handleLinkClick("SoftwareEngineer")}>
               Software Engineer
             </CustomLink>
@@ -116,8 +118,12 @@ function Home() {
               </motion.a>
             </div>
           </div>
+          <div style={{ width: '10%', marginLeft: 'auto' }}>
+            <ThreeScene />
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

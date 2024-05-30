@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,19 +25,32 @@ li {
   font-size: inherit;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 /* DEFAULT STYLING */
 * {
   margin: 0;
   padding: 0;
+  font-family: "Inter";
 
   background: none;
-  color: #dedede;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 14pt;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+@font-face {
+  font-family: "Tiempos";
+  src: local("Tiempos"),
+    url("./fonts/tiempos-headline/TiemposHeadline-LightItalic.otf") format("opentype");
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Tiempos";
+  font-style: italic;
+}
+
+h3 {
+  font-size: 20pt;
 }
 
 html {
@@ -81,6 +94,7 @@ p a:hover {
 
 .header-container {
   align-items: center; /* This ensures the text is aligned if they have different font sizes */
+  display: flex;
 }
 
 .header-container h2 {
@@ -97,14 +111,6 @@ p a:hover {
   opacity: 0.4;
 }
 
-
-.rotateNinetyCounter {
-  transform: rotate(-90deg);
-  white-space: nowrap;
-  line-height: 1em;
-  position: relative;
-}
-
 /* GLOBAL STYLING ENDS */
 
 .body {
@@ -116,7 +122,7 @@ p a:hover {
   align-items: flex-start;
   position: relative;
 
-  background-color: #161616;
+  background-color: whitesmoke;
 }
 
 @media screen and (min-width: 481px) {
@@ -140,181 +146,7 @@ p a:hover {
     left: 50%;
     transform: translateX(-50%);
   }
-
-  /* BANNER START */
-
-  .banner {
-    width: 100%;
-    height: fit-content;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2%;
-    position: sticky;
-    top: 0px;
-
-    z-index: 1;
-
-    filter: drop-shadow(0px 0px 5px rgba(22, 22, 22, 1));
-  }
-
-  .body-item {
-    width: fit-content;
-
-    display: flex;
-    flex-direction: row;
-    padding: 8px 16px;
-    user-select: none;
-    align-self: center;
-
-    border-radius: 25px;
-  }
-
-  .body-item p {
-    font-size: 32pt;
-  }
-
-  .body-item-active {
-    display: flex;
-    flex-direction: row;
-    padding: 8px 16px;
-
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-  }
-
-  .body-item-active p {
-    font-size: 32pt;
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
-  }
-
-  .body-item:active {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 16px;
-
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-  }
-
-  .body-item:active p {
-    font-size: 32pt;
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
-  }
-
-  .body-item:hover p {
-    font-size: 32pt;
-    opacity: 50%;
-  }
-
-  .body-item:hover:active p {
-    font-size: 32pt;
-    opacity: 100% !important;
-  }
   
-  /* NAVIGATION BAR START */
-
-  .nav-bar {
-    height: fit-content;
-    width: fit-content;
-
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    padding: 5px;
-    gap: 8px;
-
-    background: #1c1c1c;
-    border: 2px solid #343434;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-    border-radius: 55px;
-  }
-
-  .nav-item {
-    width: fit-content;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 8px 16px;
-    user-select: none;
-    align-self: center;
-
-    border-radius: 25px;
-  }
-
-  .nav-item p {
-    font-size: 12pt;
-  }
-
-  .nav-item-active {
-    display: flex;
-    flex-direction: row;
-    padding: 8px 16px;
-
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-  }
-
-  .nav-item-active p {
-    font-size: 12pt;
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
-  }
-
-  .nav-item:active {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-  }
-
-  .nav-item:active p {
-    font-size: 12pt;
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
-  }
-
-  .nav-item:hover p {
-    font-size: 12pt;
-    opacity: 50%;
-  }
-
-  .nav-item:hover:active p {
-    font-size: 12pt;
-    opacity: 100% !important;
-  }
-
-  .nav-icons-div {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-  }
-
-  .nav-icon:hover {
-    filter: opacity(50%);
-  }
-
-  .nav-icon * {
-    display: flex;
-    align-self: center;
-  }
-
-  /* NAV BAR END */
-
-  /* BANNER END */
-
   /* CONTENT BODY START */
 
   .content-body {
@@ -338,9 +170,6 @@ p a:hover {
     justify-content: center;
     gap: 1.2rem;
   }
-  /* SHORT ABOUT ME END */
-
-  /* GALLERY SECTION START */
 
   .gallery {
     height: min-content;
@@ -366,8 +195,7 @@ p a:hover {
     min-height: 100%;
     height: fit-content;
 
-    background: #242424;
-    border: 1px solid #343434;
+    background: #e4e0fa;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     border-radius: 25px;
   }
@@ -392,8 +220,6 @@ p a:hover {
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
-
-    color: #dedede;
   }
 
   .card .position * {
@@ -401,15 +227,7 @@ p a:hover {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-
-    color: #dedede;
   }
-
-  /* GALLERY SECTION END */
-
-  /* CONTENT BODY END */
-
-  /* CAROUSEL */
 
   .carousel {
     display: flex;
@@ -520,13 +338,11 @@ p a:hover {
     padding: 8px 16px;
 
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
 
   .body-item-active p {
     font-size: 20pt;
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.35);
   }
 
   .body-item:active {
@@ -568,9 +384,8 @@ p a:hover {
     padding: 5px;
     gap: 20px;
 
-    background: #1c1c1c;
+    background: whitesmoke;
     border: 2px solid #343434;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     border-radius: 55px;
   }
 

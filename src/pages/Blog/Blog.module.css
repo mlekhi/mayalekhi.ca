@@ -50,6 +50,25 @@
     font-size: 12pt;
     font-weight: 700;
   }
+  
+  .backlink {
+    display: inline-flex;
+    width: max-content;
+    gap: 8px;
+  
+    p {
+      width: max-content;
+    }
+  }
+  
+  .backlink:hover .backarrow {
+    transform: translateX(-4px);
+  }
+  
+  .backarrow {
+    transition: all 0.3s ease;
+  }
+  
 
   .button p {
     font-size: 12pt;
@@ -137,6 +156,25 @@
     font-size: 24pt;
   }
 
+  .backlink {
+    display: inline-flex;
+    width: max-content;
+    gap: 8px;
+  
+    p {
+      width: max-content;
+    }
+  }
+  
+  .backlink:hover .backarrow {
+    transform: translateX(-4px);
+  }
+  
+  .backarrow {
+    transition: all 0.3s ease;
+  }
+  
+  
   .button-container {
     height: fit-content;
     width: fit-content;

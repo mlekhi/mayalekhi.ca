@@ -32,7 +32,6 @@ export const projects = [
         "Aggregated hub for ex-convicts to seek financial and social support. Leap consolidates information on job opportunities, financial assistance programs, and community support. \n\nPitched to RBC executives and learned some great lessons in user research along the way.",
       tags: ["Figma", "UI", "UX"],
       imageURL: "samples/leap.gif",
-      colour: "#242424",
       disabled: false,
       links: [
         { 
@@ -47,7 +46,6 @@ export const projects = [
         "A personal CRM that uses AI to offer networking tips, generate customized coffee chat questions using web scraping, and demystify effective networking. \n\nStill something I'm chipping away at.",
       tags: ["Web Scraping", "ETL", "AI", "JS", "React"],
       imageURL: "samples/caffeinated.png",
-      colour: "#242424",
       disabled: false,
       links: [
         {
@@ -64,7 +62,6 @@ export const projects = [
         "I have always had a passion for sustainability, which bled into my first hackathon project: GreenLink. \n\nGreenLink bridges the gap between businesses and sustainable decision-making for their supply chain by providing streamlined access to insights on the best suppliers and manufacturers. The platform offers a comprehensive and accessible database of supplier sustainability practices that is designed to match businesses with the right contacts.",
       tags: ["JS", "UX", "UI", "React", "Figma"],
       imageURL: "samples/greenlink.png",
-      colour: "#242424",
       disabled: false,
       links: [
         {

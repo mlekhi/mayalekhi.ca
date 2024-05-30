@@ -1,24 +1,9 @@
-import React, { useState, useEffect } from "react";
 import styles from "./Blog.module.css";
-import { motion } from "framer-motion";
-import mixpanel from "mixpanel-browser";
+import { Link } from "react-router-dom";
+import { posts } from "./postContent";
+import Footer from "../../components/Footer/Footer.jsx";
 
-mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
-  debug: true,
-  persistence: "localStorage",
-  ignore_dnt: true,
-});
-
-function Home() {
-  const iconAnimate = {
-    hover: { rotate: 360, transition: { ease: "easeOut", duration: 0.6 } },
-    click: { rotate: 0, transition: { ease: "easeOut", duration: 0.6 } },
-  };
-
-  useEffect(() => {
-    mixpanel.track("Page Viewed");
-  }, [])
-
+function Blog() {
   return (
     <div className={"content-body"}>
       <div
@@ -26,24 +11,21 @@ function Home() {
           styles["home-hero"]
         } ${"flex flex-col-reverse lg:flex-row"}`}
       >
-        <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
-          <div className="header-container">
-            <h2>Blog.</h2>
-            <div>
-              <br/>
-              <a href="/blog/priorities">My Priorities — Summer 2024</a>
-              <br/>
-              <br/>
-              <a href="/blog/uwo">Entrepreneurship @ Western University</a>
-              <br/>
-              <br/>
-              <a href="/blog/community">Community-Building: My Learnings</a>
-            </div>
+        <div className="header-container">
+          <div>
+            <h1>Blog.</h1>
+            {posts.map(post => (
+              <p key={post.title}>
+                <br/>
+                <Link to={`/blog/${post.title.split(" ")[0]}`}>{post.title}</Link>
+              </p>
+            ))}
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Blog;
