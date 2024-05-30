@@ -59,7 +59,7 @@ export const posts = [
         },
         {
           "type": "paragraph",
-          "text": "This is a working document, so I would appreciate any comments or feedback!! The last thing I mean to be is prescriptive :)"
+          "text": "This is a working document, so I would appreciate any comments or feedback! The last thing I mean to be is prescriptive :)"
         },
         {
           "type": "heading",
@@ -97,7 +97,7 @@ export const posts = [
         },
         {
           "type": "paragraph",
-          "text": "I've talked to a lot of students with crazy potential. A common answer that I hear from why they shy away from entrepreneurship as a viable career is uncertainty—uncertainty about the value of their ideas, lack of confidence in their abilities, fear of failure, and more. These barriers are preventing a significant portion of the talent at Western from overcoming the stigma associated with entrepreneurship and going all-in on their ideas."
+          "text": "I've talked to a lot of students with crazy potential. A common answer that I hear from why they shy away from entrepreneurship as a viable career is uncertainty—uncertainty about the value of their ideas, lack of confidence in their abilities, fear of failure, and more. These barriers are preventing a significant portion of the talent at Western from overcoming the stigma associated with entrepreneurship and going all in on their ideas."
         },
         {
           "type": "paragraph",
@@ -122,6 +122,15 @@ export const posts = [
         {
           "type": "heading",
           "level": 2,
+          "text": "\"Is Entrepreneurship a Real Career?\""
+        },
+        {
+          "type": "paragraph",
+          "text": "Bouncing off of my last point, there is of course stigma that remains when students with entrepreneurial drive are entering the 'real world'."
+        },
+        {
+          "type": "heading",
+          "level": 2,
           "text": "Bonus: Western's Tech Scene"
         },
         {
@@ -130,15 +139,43 @@ export const posts = [
         },
         {
           "type": "paragraph",
-          "text": "I've come to realize that the vast majority of founders that come out of Western University lie in the CPG/manufacturing space. It makes a lot of sense considering Western's status as a renowned business school and assignments like the 2257 Feasibility project that force students to immerse themselves in the possibility of building a production enterprise. This leaves tech founders like myself turning our gaze to schools with a big tech entrepreneurship scene like Waterloo, and often dropping out or trying to transfer. For some like myself, this course of action is not possible, leaving us yearning to meet other Western-based tech founders in the same boat."
+          "text": "I've come to realize that the vast majority of founders that come out of Western University lie in the CPG/manufacturing space. It makes a lot of sense considering Western's status as a renowned business school and assignments like the 2257 Feasibility project that immerse students in the possibility of building a production enterprise. This leaves tech founders like myself turning our gaze to schools with a big tech entrepreneurship scene like Waterloo, and often dropping out or trying to transfer. For some like myself, this course of action is not possible, leaving us yearning to meet other Western-based tech founders in the same boat."
         },
         {
           "type": "italics",
           "text": "How to bridge this?"
         },
         {
-          "type": "paragraph",
-          "text": "This is one I plan to take on myself. I hope to lead by example by furthering my relentless pursuit to be a successful founder. I've had entrepreneurial experience in social impact fields (see: <a href='https://westerngazette.ca/news/campus/usc-to-add-in-app-waste-sorting-page-collaborates-with-student-group/article_9ef62de4-8245-11ee-bf9c-f38039b5a84d.html'>Greensort</a>, <a href='https://www.project5k.ca/'>Project 5K</a>), though in the long-term, I aim to develop successful tech companies as a technical founder. I'm working on this as we speak through building my first SaaS startup: Papertrail, an expense management tool for non-profits. However, this is my long-term vision taking over. In the short term, I've been supporting individual tech founders (shoutout Robin, Ryan, and more!) and been sharing the opportunities that come my way with others (e.g. <a href='https://www.cansbridgescholars.com/'>Cansbridge connections</a>, <a href='https://www.socratica.info/'>Socratica network</a>), etc."
+          "type": "paragraph-endlink",
+          "text": "This is one I plan to take on myself. I hope to lead by example by furthering my relentless pursuit to be a successful founder. I've had entrepreneurial experience in social impact fields (see: "
+        },
+        {
+          "type": "link",
+          "href": "https://westerngazette.ca/news/campus/usc-to-add-in-app-waste-sorting-page-collaborates-with-student-group/article_9ef62de4-8245-11ee-bf9c-f38039b5a84d.html",
+          "text": "Greensort, "
+        },
+        {
+          "type": "link",
+          "href": "https://www.project5k.ca/",
+          "text": "Project 5K"
+        },
+        {
+          "type": "paragraph-link",
+          "text": "), though in the long-term, I aim to develop successful tech companies as a technical founder. I'm working on this as we speak through building my first SaaS startup: Papertrail, an expense management tool for non-profits. However, this is my long-term vision taking over. In the short term, I've been supporting individual tech founders (shoutout Robin, Ryan, and more!) and been sharing the opportunities that come my way with others (e.g. "
+        },
+        {
+          "type": "link",
+          "href": "https://www.cansbridgescholars.com",
+          "text": "Cansbridge connections, "
+        },
+        {
+          "type": "link",
+          "href": "https://www.socratica.info/",
+          "text": "Socratica network"
+        },
+        {
+          "type": "paragraph-startlink",
+          "text": ", etc.)."
         },
         {
           "type": "paragraph",
@@ -151,7 +188,20 @@ export const posts = [
         },
         {
           "type": "paragraph",
-          "text": "I am so excited to see what the future holds."
+          "text": "The future of Western entrepreneurship is bright. I am so excited to see what it holds."
+        },
+        {
+          "type": "paragraph",
+          "text": ""
+        },
+        {
+          "type": "italics",
+          "level": 2,
+          "text": "Special Thank You's To My Sounding Boards"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nick Fox, Jasmine Virdee, Pratham Gupta, Anne Lekhi"
         }
       ]
     },
