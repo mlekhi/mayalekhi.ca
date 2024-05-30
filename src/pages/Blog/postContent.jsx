@@ -64,15 +64,16 @@ export const posts = [
         {
           "type": "heading",
           "level": 2,
-          "text": "Disconnect in the Student Entrepreneurial Community"
+          "text": "Struggles with Entrepreneurial Resources"
         },
         {
           "type": "paragraph",
           "text": "Western has no shortage of entrepreneurial communities. Clubs like W5, WFN, Hult, and more are all vital hubs for students. Many students, including myself, quickly find these clubs after accepting their offer to Western University through Instagram or Google searches. They are the primary entry points to Western’s student entrepreneurial community."
         },
+
         {
           "type": "paragraph",
-          "text": "Lately, I see a trend where student entrepreneurial clubs have been straying from their flagship events (e.g. incubators, fireside chats) in favour of more popular events that may be less directly related to entrepreneurship (e.g. consulting competitions, office tours). This is understandable; these newer events can be lucrative and stand to boost their popularity on campus. However, there was a reason these clubs were formed in the name of entrepreneurship in the first place and I think all they need now is a little bit of reminding."
+          "text": "Lately, I see a trend where student entrepreneurial clubs have been straying from their flagship events (e.g. incubators, fireside chats) in favour of more popular events that may be less directly related to entrepreneurship (e.g. consulting competitions, office tours). This is understandable; these newer events can be lucrative and stand to boost their popularity on campus. However, there was a reason these clubs were formed in the name of entrepreneurship in the first place. I think all they need  is a little bit of reminding."
         },
         {
           "type": "paragraph",
@@ -88,7 +89,7 @@ export const posts = [
         },
         {
           "type": "paragraph",
-          "text": "I think that Morrissette could be perfectly positioned to help achieve this. Morrissette has a wealth of resources for Western entrepreneurs, from advisors to pitch competitions to mentors. The one thing they need more of is exposure to students, which is exactly what these clubs have. A crucial next step for both organizations would be to establish a symbiotic relationship, where Morrissette provides further resources to these student organizations, while they serve as a funnel directing entrepreneurial potential to the right place to grow."
+          "text": "I think that Morrissette could be perfectly positioned to help achieve this. Morrissette has a wealth of resources for Western entrepreneurs, from advisors to pitch competitions to mentors. The one thing they need more of is exposure to students, which is exactly what these clubs have. A crucial next step for both organizations would be to establish a symbiotic relationship, where Morrissette provides further resources to these student organizations, while they serve as a funnel directing entrepreneurial potential to the right place to grow. This could be on as low-commitment of a basis as possible for both parties, even just having monthly meetings with some club heads could be a good step."
         },
         {
           "type": "heading",
@@ -179,7 +180,7 @@ export const posts = [
         },
         {
           "type": "paragraph",
-          "text": "Despite this being a discussion of how I hope to see Western entrepreneurship change, it's important to recognize how these come from a place of celebration. The need for these areas of growth indicate a growing sense of agency across Western student entrepreneurs. If you consider yourself part of this category, I implore you to reflect on how you what you hope to see in the future of Western's entrepreneurship scene. Hell, write a blog post about it! You've got at least one reader in me. The future of Western entrepreneurship is bright. I am so excited to see what it holds."
+          "text": "Despite this being a discussion of how I hope to see Western entrepreneurship change, it's important to recognize how these come from a place of celebration. The need for these areas of growth indicate a growing sense of agency across Western student entrepreneurs. If you consider yourself part of this category, I implore you to reflect on how you what you hope to see in the future of Western's entrepreneurship scene. Hell, write a blog post about it! You've got at least one reader in me."
         },
         {
           "type": "paragraph",
