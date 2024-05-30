@@ -42,12 +42,10 @@ function Post() {
               return <div><h3 key={index}>{item.text}</h3><br/></div>;
             case "paragraph":
               return <div><p key={index}>{item.text}</p><br/></div>;
-            case "paragraph-endlink":
-              return <div><p key={index}>{item.text}</p></div>;
             case "paragraph-startlink":
-              return <span><p key={index}>{item.text}</p><br/></span>;
+              return <span style={{ fontWeight: 'normal' }}>{item.text}<br/><br/></span>;
             case "paragraph-link":
-              return <span><p key={index}>{item.text}</p></span>;  
+              return <span style={{ fontWeight: 'normal' }}>{item.text}</span>;  
             case "bullet":
               return <div><p key={index}>&ensp;• {item.text}</p><br/></div>;
             case "italics":

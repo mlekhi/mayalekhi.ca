@@ -146,7 +146,7 @@ export const posts = [
           "text": "How to bridge this?"
         },
         {
-          "type": "paragraph-endlink",
+          "type": "paragraph-link",
           "text": "This is one I plan to take on myself. I hope to lead by example by furthering my relentless pursuit to be a successful founder. I've had entrepreneurial experience in social impact fields (see: "
         },
         {
