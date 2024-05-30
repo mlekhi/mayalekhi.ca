@@ -53,7 +53,7 @@ function Post() {
             case "link":
               return <span><a key={index} href={item.href}>{item.text}</a></span>;
             default:
-              return null; // Handle other types if needed
+              return null;
           }
         })}
       </div>

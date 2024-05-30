@@ -188,7 +188,11 @@ export const posts = [
         },
         {
           "type": "paragraph",
-          "text": "The future of Western entrepreneurship is bright. I am so excited to see what it holds."
+          "text": "Despite this being a discussion of how I hope to see Western entrepreneurship change, it's important to recognize how these come from a place of celebration. The need for these areas of growth indicate a growing sense of agency across Western student entrepreneurs. If you consider yourself part of this category, I implore you to reflect on how you what you hope to see in the future of Western's entrepreneurship scene. Hell, write a blog post about it! You've got at least one reader in me. The future of Western entrepreneurship is bright. I am so excited to see what it holds."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ultimately, the future of Western entrepreneurship is so bright. I am beyond excited to see how it materializes, and I will continue doing my best to drive progress."
         },
         {
           "type": "paragraph",
