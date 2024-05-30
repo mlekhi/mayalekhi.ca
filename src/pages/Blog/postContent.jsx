@@ -76,7 +76,7 @@ export const posts = [
         },
         {
           "type": "paragraph",
-          "text": "From an individual perspective, the current landscape results in a lot of difficulties meeting fellow founders, nurturing individual's entrepreneurial drive, and fostering a closely knit entrepreneurship scene where we inspire one another. Though myself and others have been trying to bridge this disconnect as an individual; however, there is a deep need for some structural changes to take place."
+          "text": "From an individual perspective, the current landscape results in a lot of difficulties meeting fellow founders, nurturing individual's entrepreneurial drive, and fostering a closely knit entrepreneurship scene where we inspire one another. Though myself and others have been trying to bridge this disconnect, there is a deep need for some structural changes to take place."
         },
         {
           "type": "italics",
