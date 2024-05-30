@@ -122,15 +122,6 @@ export const posts = [
         {
           "type": "heading",
           "level": 2,
-          "text": "\"Is Entrepreneurship a Real Career?\""
-        },
-        {
-          "type": "paragraph",
-          "text": "Bouncing off of my last point, there is of course stigma that remains when students with entrepreneurial drive are entering the 'real world'."
-        },
-        {
-          "type": "heading",
-          "level": 2,
           "text": "Bonus: Western's Tech Scene"
         },
         {
