@@ -12,7 +12,7 @@ mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   ignore_dnt: true,
 });
 
-function Home() {
+function About() {
   const iconAnimate = {
     hover: { rotate: 360, transition: { ease: "easeOut", duration: 0.6 } },
     click: { rotate: 0, transition: { ease: "easeOut", duration: 0.6 } },
@@ -177,4 +177,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;
