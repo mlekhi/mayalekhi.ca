@@ -88,7 +88,7 @@ function Home() {
       >
         <div className="header-container">
           <div>
-            <h1>Hi! I'm Maya Lekhi.</h1>
+            <h1>Hi! I'm <span>Maya Lekhi</span>.</h1>
             <h1 style={{ fontSize: '20pt' }}>psst. the links change!</h1>
             <br/>
             <CustomLink onClick={() => handleLinkClick("SoftwareEngineer")}>
