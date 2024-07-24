@@ -1,5 +1,60 @@
 export const projects = [
     {
+      title: "Decaf",
+      description: "Redefining Networking using AI & Web Scraping",
+      paragraph:
+        "A personal CRM that uses AI to offer networking tips, generate customized coffee chat questions using web scraping, and demystify effective networking. \n\nStill something I'm chipping away at.",
+      tags: ["Web Scraping", "ETL", "AI", "JS", "React"],
+      imageURL: "samples/caffeinated.png",
+      disabled: false,
+      links: [
+        {
+          site: "LinkedIn Post",
+          url: "https://www.linkedin.com/posts/activity-7214779913042604032-jQpg?utm_source=share",
+        },
+        {
+          site: "Early Access",
+          url: "https://decaf-crm.vercel.app/",
+        },
+      ],
+    },
+    {
+      title: "Sip & Play",
+      description:
+        "Designing a Board Game Style Website",
+      paragraph:
+        "A 3D website redesign for a board game café in Brooklyn. Doing a full refresh focused on bringing the fun of board games onto an interactive website.\n\n2nd Place Winner at CodeDex Hackathon.",
+      tags: ["3JS", "React", "Figma", "Branding", "SEO", "Blender"],
+      imageURL: "samples/sipnplay.png",
+      colour: "#242424",
+      disabled: false,
+      links: [
+        {
+          site: "CodeDex",
+          url: "https://www.codedex.io/community/hackathon",
+        },
+        {
+          site: "GitHub",
+          url: "https://github.com/mlekhi/sipnplay",
+        },
+      ],
+    },
+    {
+      title: "Empa",
+      description: "Creating an Emotional Intelligence Partner",
+      paragraph:
+        "Empa is a full-stack web application that leverages computer vision and machine learning to analyze facial expressions and translate them into recognizable emotions. It's designed to assist individuals with communication disorders in social interactions, help those on the autism spectrum understand emotional cues, and enhance empathy in diverse, cross-cultural communications.\n\nFirst place winner @ SheHacks8.",
+      tags: ["AI", "SciKit Learn", "Python", "Jupyter Notebook", "React"],
+      imageURL: "samples/empa.png",
+      disabled: false,
+      links: [
+        {
+          site: "GitHub",
+          url: "https://github.com/mlekhi/empa",
+        },
+      ],
+    },
+    {
       title: "GreenSort",
       description:
         "Fighting Waste Contamination at Western University",
@@ -37,21 +92,6 @@ export const projects = [
         { 
           site: "Figma", 
           url: "https://google.com" },
-      ],
-    },
-    {
-      title: "Caffeinated",
-      description: "Redefining Networking using AI & Web Scraping",
-      paragraph:
-        "A personal CRM that uses AI to offer networking tips, generate customized coffee chat questions using web scraping, and demystify effective networking. \n\nStill something I'm chipping away at.",
-      tags: ["Web Scraping", "ETL", "AI", "JS", "React"],
-      imageURL: "samples/caffeinated.png",
-      disabled: false,
-      links: [
-        {
-          site: "GitHub",
-          url: "https://github.com/mlekhi/coffee",
-        },
       ],
     },
     {

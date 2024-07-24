@@ -118,7 +118,7 @@ function Home() {
               </motion.a>
             </div>
           </div>
-          <div style={{ width: '10%', marginLeft: 'auto' }}>
+          <div className="hide-on-mobile" style={{ width: '10%', marginLeft: 'auto' }}>
             <ThreeScene />
           </div>
         </div>

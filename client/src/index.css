@@ -38,15 +38,22 @@ li {
 }
 
 @font-face {
-  font-family: "Tiempos";
+  font-family: "Tiempos-Italic";
   src: local("Tiempos"),
     url("./fonts/tiempos-headline/TiemposHeadline-LightItalic.otf") format("opentype");
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Tiempos";
+  src: local("Tiempos"),
+    url("./fonts/tiempos-headline/TiemposHeadline-Light.otf") format("opentype");
+  font-weight: normal;
+}
+
 h1 {
   font-family: "Tiempos";
-  font-style: italic;
+  font-style: n;
 }
 
 h3 {
@@ -282,9 +289,13 @@ p a:hover {
 
 @media screen and (max-width: 480px) {
   .body {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
+    .hide-on-mobile {
+      display: none;
+    }
+    
   .viewer {
     width: calc(100vw - 1rem);
     height: calc(100dvh - 1rem);
