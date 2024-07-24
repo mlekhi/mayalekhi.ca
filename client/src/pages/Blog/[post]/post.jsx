@@ -26,7 +26,7 @@ function Post() {
       <div
         className={`${
           styles["home-hero"]
-        } ${"flex flex-col-reverse lg:flex-row"}`}
+        } ${"flex lg:flex-row"}`}
       >
         <Link to="/Blog" className={styles.backlink}>
           <p className={styles.backarrow}>{"<- "}</p>

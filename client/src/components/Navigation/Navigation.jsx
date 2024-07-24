@@ -44,7 +44,7 @@ const Navigation = () => {
           <CustomLink to="/">Home</CustomLink>
           <CustomLink to="/About">About</CustomLink>
           <CustomLink to="/Projects">Projects</CustomLink>
-          <CustomLink to="/Travels">Travels</CustomLink>
+          {/* <CustomLink to="/Travels">Travels</CustomLink> */}
           <CustomLink to="/Blog">Blog</CustomLink>
         </div>
         <div className={styles["nav-icons-div"]}>
@@ -90,7 +90,7 @@ const Navigation = () => {
           <CustomLink to="/" onClick={toggleMenu}>Home</CustomLink>
           <CustomLink to="/About" onClick={toggleMenu}>About</CustomLink>
           <CustomLink to="/Projects" onClick={toggleMenu}>Projects</CustomLink>
-          <CustomLink to="/Travels" onClick={toggleMenu}>Travels</CustomLink>
+          {/* <CustomLink to="/Travels" onClick={toggleMenu}>Travels</CustomLink> */}
           <CustomLink to="/Blog" onClick={toggleMenu}>Blog</CustomLink>
         </div>
       )}
