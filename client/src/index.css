@@ -53,7 +53,10 @@ li {
 
 h1 {
   font-family: "Tiempos";
-  font-style: n;
+}
+
+span {
+  font-family: "Tiempos-Italic";
 }
 
 h3 {
