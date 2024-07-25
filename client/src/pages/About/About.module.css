@@ -31,7 +31,6 @@
     padding: 5px;
     gap: 20px;
 
-    background: #1c1c1c;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     border-radius: 55px;
   }
@@ -61,7 +60,6 @@
     flex-direction: row;
     padding: 8px 16px;
 
-    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
@@ -78,7 +76,6 @@
     align-items: center;
     padding: 8px 16px;
 
-    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
@@ -97,7 +94,6 @@
     font-size: 12pt;
     opacity: 100% !important;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -140,7 +136,6 @@
     padding: 5px;
     gap: 20px;
 
-    background: #1c1c1c;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   }
 
@@ -167,7 +162,6 @@
     flex-direction: row;
     padding: 8px 16px;
 
-    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
@@ -184,7 +178,6 @@
     align-items: center;
     padding: 8px 16px;
 
-    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
@@ -206,7 +199,6 @@
 
   /* HOME PAGE HERO END */
 }
-
 
 .nav-bar {
   height: fit-content;
@@ -360,4 +352,3 @@
 
   color: #dedede;
 }
-

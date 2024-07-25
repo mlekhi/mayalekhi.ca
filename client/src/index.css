@@ -6,7 +6,8 @@
 
 body {
   margin: 0;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,7 +41,8 @@ li {
 @font-face {
   font-family: "Tiempos-Italic";
   src: local("Tiempos"),
-    url("./fonts/tiempos-headline/TiemposHeadline-LightItalic.otf") format("opentype");
+    url("./fonts/tiempos-headline/TiemposHeadline-LightItalic.otf")
+      format("opentype");
   font-weight: normal;
 }
 
@@ -53,11 +55,6 @@ li {
 
 h1 {
   font-family: "Tiempos";
-}
-
-span {
-  font-size: 42pt;
-  font-family: "Tiempos-Italic";
 }
 
 h3 {
@@ -157,7 +154,7 @@ p a:hover {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   /* CONTENT BODY START */
 
   .content-body {
@@ -207,7 +204,6 @@ p a:hover {
     height: fit-content;
 
     background: #e4e0fa;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     border-radius: 25px;
   }
 
@@ -296,10 +292,10 @@ p a:hover {
     padding: 1rem;
   }
 
-    .hide-on-mobile {
-      display: none;
-    }
-    
+  .hide-on-mobile {
+    display: none;
+  }
+
   .viewer {
     width: calc(100vw - 1rem);
     height: calc(100dvh - 1rem);
@@ -352,7 +348,6 @@ p a:hover {
     flex-direction: row;
     padding: 8px 16px;
 
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
 
@@ -367,7 +362,6 @@ p a:hover {
     align-items: center;
     padding: 8px 16px;
 
-    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
@@ -427,7 +421,6 @@ p a:hover {
     flex-direction: row;
     padding: 8px 16px;
 
-    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
@@ -444,7 +437,6 @@ p a:hover {
     align-items: center;
     padding: 8px 16px;
 
-    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
   }
@@ -496,6 +488,8 @@ p a:hover {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   /* GALLERY SECTION START */
@@ -509,7 +503,7 @@ p a:hover {
     align-items: center;
     justify-content: center;
   }
-  
+
   /* CARD STYLING */
   .card {
     display: flex;
@@ -522,9 +516,7 @@ p a:hover {
     width: 320px;
     height: fit-content;
 
-    background: #242424;
-    border: 1px solid #343434;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    background: #e4e0fa;
     border-radius: 25px;
   }
 
@@ -548,8 +540,6 @@ p a:hover {
     font-size: 16px;
     line-height: 24px;
     text-align: left;
-
-    color: #dedede;
   }
 
   .card .position * {
@@ -558,8 +548,6 @@ p a:hover {
     font-size: 14px;
     text-align: left;
     line-height: 24px;
-
-    color: #dedede;
   }
 
   /* GALLERY SECTION END */

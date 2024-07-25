@@ -38,7 +38,9 @@ const Navigation = () => {
     <>
       <div className={styles.banner}>
         <div>
-          <a className={styles.webtitle} href="/">maya lekhi</a>
+          <a className={styles.webtitle} href="/">
+            maya lekhi
+          </a>
         </div>
         <div className={styles["nav-bar"]}>
           <CustomLink to="/">Home</CustomLink>
@@ -87,11 +89,51 @@ const Navigation = () => {
       </div>
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
-          <CustomLink to="/" onClick={toggleMenu}>Home</CustomLink>
-          <CustomLink to="/About" onClick={toggleMenu}>About</CustomLink>
-          <CustomLink to="/Projects" onClick={toggleMenu}>Projects</CustomLink>
+          <div className={styles["nav-icons-div"]}>
+            <motion.a
+              whileHover="hover"
+              whileTap="click"
+              variants={iconAnimate}
+              className={styles["nav-icon"]}
+              target="_blank"
+              href="https://www.linkedin.com/in/maya-l/"
+            >
+              <Icons.LinkedIn />
+            </motion.a>
+            <motion.a
+              whileHover="hover"
+              whileTap="click"
+              variants={iconAnimate}
+              className={styles["nav-icon"]}
+              target="_blank"
+              href="https://github.com/mlekhi"
+            >
+              <Icons.GitHub />
+            </motion.a>
+            <motion.a
+              whileHover="hover"
+              whileTap="click"
+              variants={iconAnimate}
+              className={styles["nav-icon"]}
+              target="_blank"
+              href="mailto:maya.lekhi1@gmail.com"
+            >
+              <Icons.Email />
+            </motion.a>
+          </div>
+          <CustomLink to="/" onClick={toggleMenu}>
+            Home
+          </CustomLink>
+          <CustomLink to="/About" onClick={toggleMenu}>
+            About
+          </CustomLink>
+          <CustomLink to="/Projects" onClick={toggleMenu}>
+            Projects
+          </CustomLink>
           {/* <CustomLink to="/Travels" onClick={toggleMenu}>Travels</CustomLink> */}
-          <CustomLink to="/Blog" onClick={toggleMenu}>Blog</CustomLink>
+          <CustomLink to="/Blog" onClick={toggleMenu}>
+            Blog
+          </CustomLink>
         </div>
       )}
     </>
