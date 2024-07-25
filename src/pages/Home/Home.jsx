@@ -24,11 +24,11 @@ const CustomLink = ({ children, onClick }) => {
         whileTap={{ scale: 0.95 }}
         className="body-item"
       >
-        <p style={{ lineHeight: '2' }}>{children}</p>
+        <p style={{ lineHeight: "2" }}>{children}</p>
       </motion.div>
     </div>
   );
-}
+};
 
 function Home() {
   const iconAnimate = {
@@ -41,10 +41,7 @@ function Home() {
   }, []);
 
   const linkSets = {
-    SoftwareEngineer: [
-      "/Projects",
-      "https://github.com/mlekhi",
-    ],
+    SoftwareEngineer: ["/Projects", "https://github.com/mlekhi"],
     Researcher: [
       "https://castellanilab.com/members/",
       "https://csfjournal.com/volume-5-issue-2/2022/10/26/tackling-canadas-discriminatory-water-crisis-optimizing-scoby-biofilms-to-develop-renewable-living-filter-membranes",
@@ -57,9 +54,7 @@ function Home() {
       "https://www.notion.so/maya-lekhi/Tikka-127b0bd05eeb42d0bc384dc8d70a5171?pvs=4",
       "https://www.notion.so/maya-lekhi/Smoke-Rising-1378ff0c26a045e58c464c24409adbf7?pvs=4",
     ],
-    Founder: [
-      "/About",
-    ],
+    Founder: ["/About"],
     CommunityBuilder: [
       "https://www.socratica.info",
       "https://lu.ma/moment.um",
@@ -88,9 +83,15 @@ function Home() {
       >
         <div className="header-container">
           <div>
-            <h1>Hi! I'm Maya Lekhi.</h1>
-            <h1 style={{ fontSize: '20pt' }}>psst. the links change!</h1>
-            <br/>
+            <h1>
+              Hi! I'm{" "}
+              <span style={{ fontSize: "42pt", fontFamily: "Tiempos-Italic" }}>
+                Maya Lekhi
+              </span>
+              .
+            </h1>
+            <h1 style={{ fontSize: "20pt" }}>psst. the links change!</h1>
+            <br />
             <CustomLink onClick={() => handleLinkClick("SoftwareEngineer")}>
               Software Engineer
             </CustomLink>
@@ -106,19 +107,24 @@ function Home() {
             <CustomLink onClick={() => handleLinkClick("CommunityBuilder")}>
               Community-Builder
             </CustomLink>
-            <div className={styles["button-container"]}>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                variants={iconAnimate}
-                className={styles["button"]}
-                href="mailto:maya.lekhi1@gmail.com"
-              >
-                <p>Email Me</p>
-              </motion.a>
+            <div style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+              <div className={styles["button-container"]}>
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  variants={iconAnimate}
+                  className={styles["button"]}
+                  href="mailto:maya.lekhi1@gmail.com"
+                >
+                  <p>Email Me</p>
+                </motion.a>
+              </div>
             </div>
           </div>
-          <div style={{ width: '10%', marginLeft: 'auto' }}>
+          <div
+            className="hide-on-mobile"
+            style={{ width: "10%", marginLeft: "auto" }}
+          >
             <ThreeScene />
           </div>
         </div>

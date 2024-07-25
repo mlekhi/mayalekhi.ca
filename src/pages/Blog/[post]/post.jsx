@@ -1,6 +1,6 @@
 // Post.js
 import React from "react";
-import styles from '../Blog.module.css';
+import styles from "../Blog.module.css";
 import { Link, useParams } from "react-router-dom"; // Import useParams to access route parameters
 import { posts } from "../postContent";
 import Footer from "../../../components/Footer/Footer.jsx";
@@ -9,11 +9,11 @@ function Post() {
   // Access route parameter (:postTitle)
   let { postTitle } = useParams();
   console.log(postTitle);
-  
+
   // Find the post data based on the route parameter
-  const post = posts.find(post => {
-    const firstWord = post.title.split(' ')[0];
-      return firstWord === postTitle;
+  const post = posts.find((post) => {
+    const firstWord = post.title.split(" ")[0];
+    return firstWord === postTitle;
   });
 
   if (!post) {
@@ -23,35 +23,65 @@ function Post() {
   // Render the post content
   return (
     <div className={"content-body"}>
-      <div
-        className={`${
-          styles["home-hero"]
-        } ${"flex flex-col-reverse lg:flex-row"}`}
-      >
+      <div className={`${styles["home-hero"]} ${"flex lg:flex-row"}`}>
         <Link to="/Blog" className={styles.backlink}>
           <p className={styles.backarrow}>{"<- "}</p>
           <p>Back to Blog</p>
         </Link>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h2>{post.title}</h2>
-        <br/>
+        <br />
         {post.content.map((item, index) => {
           switch (item.type) {
             case "heading":
-              return <div><h3 key={index}>{item.text}</h3><br/></div>;
+              return (
+                <div>
+                  <h3 key={index}>{item.text}</h3>
+                  <br />
+                </div>
+              );
             case "paragraph":
-              return <div><p key={index}>{item.text}</p><br/></div>;
+              return (
+                <div>
+                  <p key={index}>{item.text}</p>
+                  <br />
+                </div>
+              );
             case "paragraph-startlink":
-              return <span style={{ fontWeight: 'normal' }}>{item.text}<br/><br/></span>;
+              return (
+                <span style={{ fontWeight: "normal" }}>
+                  {item.text}
+                  <br />
+                  <br />
+                </span>
+              );
             case "paragraph-link":
-              return <span style={{ fontWeight: 'normal' }}>{item.text}</span>;  
+              return <span style={{ fontWeight: "normal" }}>{item.text}</span>;
             case "bullet":
-              return <div><p key={index}>&ensp;• {item.text}</p><br/></div>;
+              return (
+                <div>
+                  <p key={index}>&ensp;• {item.text}</p>
+                  <br />
+                </div>
+              );
             case "italics":
-              return <div><p key={index}><i>{item.text}</i></p><br/></div>;
+              return (
+                <div>
+                  <p key={index}>
+                    <i>{item.text}</i>
+                  </p>
+                  <br />
+                </div>
+              );
             case "link":
-              return <span><a key={index} href={item.href}>{item.text}</a></span>;
+              return (
+                <span>
+                  <a key={index} href={item.href}>
+                    {item.text}
+                  </a>
+                </span>
+              );
             default:
               return null;
           }

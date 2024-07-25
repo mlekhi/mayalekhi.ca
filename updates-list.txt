@@ -1,8 +1,0 @@
-current problems:
-mobile layout
-make footer -- link it to the open source
-i dont like the grey anymore
-
-future updates:
-stuff is wrong with mixpanel
-make notes page

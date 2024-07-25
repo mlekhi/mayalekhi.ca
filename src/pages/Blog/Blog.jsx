@@ -14,10 +14,12 @@ function Blog() {
         <div className="header-container">
           <div>
             <h1>Blog.</h1>
-            {posts.map(post => (
+            {posts.map((post) => (
               <p key={post.title}>
-                <br/>
-                <Link to={`/blog/${post.title.split(" ")[0]}`}>{post.title}</Link>
+                <br />
+                <Link to={`/blog/${post.title.split(" ")[0]}`}>
+                  {post.title}
+                </Link>
               </p>
             ))}
           </div>

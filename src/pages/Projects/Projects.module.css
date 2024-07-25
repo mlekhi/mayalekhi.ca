@@ -20,7 +20,7 @@
 
   h2 {
     font-size: 25pt;
-    font-weight: 600;  
+    font-weight: 600;
   }
 
   a {
@@ -37,12 +37,12 @@
   }
 
   .imgGallery img {
-    max-height: 280px; 
-    width: auto; 
+    max-height: 280px;
+    width: auto;
     object-fit: contain;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.393);
     border-radius: 1rem;
-    transition: transform 0.5s ease; 
+    transition: transform 0.5s ease;
   }
 
   .imgGallery img:hover {
@@ -97,7 +97,7 @@
   }
 
   .projects {
-    width: 90%; /* Adjust the width for smaller screens */
+    width: 85%; /* Adjust the width for smaller screens */
   }
 
   .header {

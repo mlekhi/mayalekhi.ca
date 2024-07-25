@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import styles from "./About.module.css";
+import React, { useEffect, useState } from "react";
 import * as Img from "./images";
 import { motion } from "framer-motion";
 import Card from "../../components/Card/Card";
@@ -12,7 +12,7 @@ mixpanel.init("2b837b3806273e1cc3e621de8faee49e", {
   ignore_dnt: true,
 });
 
-function Home() {
+function About() {
   const iconAnimate = {
     hover: { rotate: 360, transition: { ease: "easeOut", duration: 0.6 } },
     click: { rotate: 0, transition: { ease: "easeOut", duration: 0.6 } },
@@ -81,100 +81,107 @@ function Home() {
   const cardsCur = cardsShown === "present" ? cardsPresent : cardsPast;
 
   return (
-    <div className={"content-body"}>
-      <div
-        className={`${
-          styles["home-hero"]
-        } ${"flex flex-col-reverse lg:flex-row"}`}
-      >
-        <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
-          <div className="header-container">
-            <h1>About Me.</h1>
-          </div>
-          <p>
-            I am a driven second-year Computer Science student at Western University.
-            I’m extremely passionate about tech, social impact, 
-            writing, and nurturing communities! <br />
-            <br />
-            Currently, I'm leading Western University's largest conference on emerging technology at {" "}
-            <a target="_blank" href="https://www.foundersnetwork.ca">
-              Western Founders' Network, 
-            </a> Western's entrepreneurship society. 
-            <br />
-            <br />
-            On top of this, I have been building  {" "}
-            <a target="_blank" href="https://lu.ma/moment.um">
-              Momentum 
-            </a>: a coworking community bringing together Western University's builders, 
-            creatives, technologists, budding founders, and more, to work on and showcase their passion projects. 
-            It's a space that provides youth with the permission, accountability, and community to dedicate themselves to work they care about. 
-            <br />
-            <br />
-            When I'm not working to support youth in their passions, I'm busy pursuing my own!
-            You can usually find me playing Pokémon, making Spotify playlists, competing in hackathons, 
-            meeting exceptional people, and building new things.
-          </p>
-        </div>
-      </div>
-      <div className={styles["nav-bar"]}>
-        <motion.button
-          variants={iconAnimate}
-          onClick={() => setCardsShown("present")}
-          className={`${styles["button"]} ${
-            cardsShown == "present" ? styles["button-active"] : ""
-          }`}
-          style={{ outline: "none", border: "none" }}
-        >
-          Present
-          <span
-            style={{
-              paddingLeft: "0.5rem",
-              fontSize: "8pt",
-              alignSelf: "center",
-            }}
-          >
-            ({cardsPresent.length})
-          </span>
-        </motion.button>
-        <motion.button
-          variants={iconAnimate}        
-          onClick={() => setCardsShown("past")} 
-          className={`${styles["button"]} ${
-            // eslint-disable-next-line
-            cardsShown == "past" ? styles["button-active"] : ""
-          }`}
-          style={{ outline: "none", border: "none" }}
-        >
-          Past
-          <span
-            style={{
-              paddingLeft: "0.5rem",
-              fontSize: "8pt",
-              alignSelf: "center",
-            }}
-          >
-            ({cardsPast.length})
-          </span>
-        </motion.button>
-      </div>
-      <div className={"gallery"}>
-        {cardsCur.map((card, index) => {
-          return (
-            <Card
-              key={index}
-              url={card.url}
-              image={card.image}
-              title={card.orgName}
-              desc={card.positionName}
-            />
-          );
-        })}
-      </div>
+    <div>
       <div className={"content-body"}>
+        <div
+          className={`${
+            styles["home-hero"]
+          } ${"flex flex-col-reverse lg:flex-row"}`}
+        >
+          <div className={`${styles["home-hero-text"]} ${"lg:w-[60%] w-full"}`}>
+            <div className="header-container">
+              <h1>About Me.</h1>
+            </div>
+            <p>
+              I am a driven second-year Computer Science student at Western
+              University. I’m extremely passionate about tech, social impact,
+              writing, and nurturing communities! <br />
+              <br />
+              Currently, I'm leading Western University's largest conference on
+              emerging technology at{" "}
+              <a target="_blank" href="https://www.foundersnetwork.ca">
+                Western Founders' Network,
+              </a>{" "}
+              Western's entrepreneurship society.
+              <br />
+              <br />
+              On top of this, I have been building{" "}
+              <a target="_blank" href="https://lu.ma/moment.um">
+                Momentum
+              </a>
+              : a coworking community bringing together Western University's
+              builders, creatives, technologists, budding founders, and more, to
+              work on and showcase their passion projects. It's a space that
+              provides youth with the permission, accountability, and community
+              to dedicate themselves to work they care about.
+              <br />
+              <br />
+              When I'm not working to support youth in their passions, I'm busy
+              pursuing my own! You can usually find me playing Pokémon, making
+              Spotify playlists, competing in hackathons, meeting exceptional
+              people, and building new things.
+            </p>
+          </div>
+        </div>
+        <div className={styles["nav-bar"]}>
+          <motion.button
+            variants={iconAnimate}
+            onClick={() => setCardsShown("present")}
+            className={`${styles["button"]} ${
+              cardsShown == "present" ? styles["button-active"] : ""
+            }`}
+            style={{ outline: "none", border: "none" }}
+          >
+            Present
+            <span
+              style={{
+                paddingLeft: "0.5rem",
+                fontSize: "8pt",
+                alignSelf: "center",
+              }}
+            >
+              ({cardsPresent.length})
+            </span>
+          </motion.button>
+          <motion.button
+            variants={iconAnimate}
+            onClick={() => setCardsShown("past")}
+            className={`${styles["button"]} ${
+              // eslint-disable-next-line
+              cardsShown == "past" ? styles["button-active"] : ""
+            }`}
+            style={{ outline: "none", border: "none" }}
+          >
+            Past
+            <span
+              style={{
+                paddingLeft: "0.5rem",
+                fontSize: "8pt",
+                alignSelf: "center",
+              }}
+            >
+              ({cardsPast.length})
+            </span>
+          </motion.button>
+        </div>
+        <div className={"gallery"}>
+          {cardsCur.map((card, index) => {
+            return (
+              <Card
+                key={index}
+                url={card.url}
+                image={card.image}
+                title={card.orgName}
+                desc={card.positionName}
+              />
+            );
+          })}
+        </div>
+        <div className={"content-body"}></div>
       </div>
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default About;
