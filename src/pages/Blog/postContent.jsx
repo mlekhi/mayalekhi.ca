@@ -1,4 +1,96 @@
 export const posts = [
+      {
+    "title": "Progress and Play: On Demos, Agile, and Modern Coworking",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "I’ve grown up believing that building in the shadows was the best course of action. It felt cool— to suddenly show off a fully-built project to the world, getting to hear praise for the finished project without the world knowing of the struggles it took to get there."
+      },
+      {
+        "type": "paragraph",
+        "text": "Somehow, the further I headed down this path, the less I found myself getting done. I found myself caught in an internal struggle between getting traction on my projects and keeping my work free from judgement, ultimately halting my progress altogether. I became too overly critical and frankly afraid to put projects out into the world, which started to take an impact on my own skills because I would never get user validation on any of my work. This left me with nothing but countless abandoned projects and a head full of questions, such as: **Is it easier to make progress in stealth? How do we give way to a world with more progress? How might we build better systems for people to consistently and sustainably work on the things that they care about?**"
+      },
+      {
+        "type": "paragraph",
+        "text": "After years of exploring this through Momentum, Socratica, and Cansbridge, my answer is simple: **through play**."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Stealth Mode"
+      },
+      {
+        "type": "paragraph",
+        "text": "It took me a long time to be reminded that we are better together. The world is here to see my progress just as much as it is here to see me prosper. That’s why I could not be happier about the rising popularity of building in public and programs like buildspace."
+      },
+      {
+        "type": "paragraph",
+        "text": "I think that movements like this have a very powerful message: Work on things that you love openly and progress will follow. It rings very true in real life examples. From Pieter Levels to Plato, public discourse has a fantastic ability to shape ideas for the better and to keep you accountable."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Bye Bye Fireside Chats, Hello Show-and-Tell"
+      },
+      {
+        "type": "paragraph",
+        "text": "Transitioning from building in the shadows to building in public led me to fall in love with demo culture. [Note: when I say demo culture, I am absolutely not referring to Steve Jobs style tech product demos. Demos have a wide range, and the vast majority of them are *significantly* more casual.] To me, demos are a modern-day form of show-and-tell, where people come together in a safe environment to share whatever they find cool. There's no presentation anxiety or need to prove yourself—just the joy of sharing the magic you see in your work."
+      },
+      {
+        "type": "paragraph",
+        "text": "Demo culture creates an atmosphere of vulnerability, sharing, and transparency. With its surge in popularity, I hope to see panels and fireside chats replaced with more equal sharing environments. Demos teach healthy sharing habits, constructive feedback, and how to supercharge others' work. Whether you're working on a startup or a side project, showing off your work is the ultimate display of authenticity and vulnerability."
+      },
+      {
+        "type": "paragraph",
+        "text": "So, I return to the question. How do we give way to a world with more progress? Bring back show-and-tell. As demonstrated by the rise of building in public, people will naturally want to work harder on things that they show to the world. And by bringing in the whimsical short-form nature of demos, there’s no more need to overthink what you put out into the world."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Agile Methodologies?!?"
+      },
+      {
+        "type": "paragraph",
+        "text": "From my position as someone who uses Twitter quite excessively, I was mostly exposed to demos in the context of play. It was starting a new job and getting used agile project management again that reminded me of the accountability that comes with demos."
+      },
+      {
+        "type": "aside",
+        "text": "💡 What is agile? It’s a project management approach that involves breaking the project into phases and emphasizes continuous collaboration and improvement. It’s based in iteration and incremental development."
+      },
+      {
+        "type": "paragraph",
+        "text": "[INCLUDE MORE DISCUSSION ABOUT START OF SPRINT ACTIVITIES & INTENTION SETTING]"
+      },
+      {
+        "type": "paragraph",
+        "text": "End-of-sprint demos are already an integral part of agile. During these demos, teams showcase their completed work to stakeholders, receive feedback, and discuss improvements. This practice is a built-in feedback loop, alignment check, and development speedometer. These demos prioritize simplicity over complexity and effectively tackle white paper culture. They also make working remotely a lot more possible!"
+      },
+      {
+        "type": "paragraph",
+        "text": "If you couldn’t tell, I’m a big fan of agile. I believe that it is not only the future of collaborative work, but is also the future of coworking in more informal settings."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The Future of Coworking"
+      },
+      {
+        "type": "paragraph",
+        "text": "Combining demo culture with agile practices shapes the future of co-working."
+      },
+      {
+        "type": "paragraph",
+        "text": "Socratica sessions, for instance, take on a condensed agile structure, where a sprint is just one co-working session. You move from stand-up and intention-setting to deep work and end with fun demos with your peers. This results in lasting accountability to your work, because just by showing up people are immersing themselves in a micro-sprint."
+      },
+      {
+        "type": "paragraph",
+        "text": "---"
+      },
+      {
+        "type": "paragraph",
+        "text": "We know that the best work is achieved when it doesn’t feel like work. Now is the time to build spaces so that this kind of work is not only within reach, but a norm. Casual agile work, demo show offs to friends, and creating a culture of feedback EVERYWHERE is the gateway to building the future and having fun while doing it."
+      }
+    },
     {
       "title": "Entrepreneurship @ Western University: An Opinion Piece",
       "content": [
@@ -225,7 +317,7 @@ export const posts = [
         {
           type: "bullet",
           text: "Invite passionate founders to apply for Cansbridge programs"
-        },
+        ]},
         {
           type: "paragraph",
           text: "Continue writing!"
