@@ -317,7 +317,7 @@ export const posts = [
         {
           type: "bullet",
           text: "Invite passionate founders to apply for Cansbridge programs"
-        },
+        ]},
         {
           type: "paragraph",
           text: "Continue writing!"
