@@ -1,52 +1,5 @@
 export const posts = [
     {
-      title: "Community-Building Learnings",
-      content: [
-        {
-          type: "heading",
-          level: 3,
-          text: "My Big Learnings About Community-Building (an on-going work)"
-        },
-        {
-          type: "paragraph",
-          text: "1. How to find great people"
-        },
-        {
-          type: "paragraph",
-          text: "TLDR: They are right in front of you."
-        },
-        {
-          type: "paragraph",
-          text: "In my life today, I see the manifestation of the “there are no good people here” attitude most prevalently with Canadian students flocking to the United States. New York and San Francisco are ✨where the pretty people are ✨ — shiny, better, smarter, and cooler — moving to these places will make all your problems go away. While I can’t deny the magic of being surrounded by awesome people, the problem with everyone constantly chasing the hype is that it essentially turns us all into leeches — if 100% of people are focused on “finding where the best party is”, none of the parties will actually be fun. Communities die when everyone seeks to gain more than they hope to give."
-        },
-        {
-          type: "paragraph",
-          text: "2. How to get people to show up"
-        },
-        {
-          type: "paragraph",
-          text: "TLDR: Prioritize the experience of the people who DO show up"
-        },
-        {
-          type: "paragraph",
-          text: "If you have a disappointing turnout, don’t focus your energy on the people who aren’t there. Don’t lecture the people in a call about how attendance is important, and don’t spend the first 40 minutes waiting for people to trickle into your event. Everyone in attendance will feel their time is wasted, and that will probably be the last time they attend."
-        },
-        {
-          type: "paragraph",
-          text: "3. How to help people be the best versions of themselves"
-        },
-        {
-          type: "paragraph",
-          text: "TLDR: “Feeling like you’ve found your people” is rarely about the specific selection of people in a room and often about the social norms governing the way you interact with each other."
-        },
-        {
-          type: "paragraph",
-          text: "It’s comforting having a shiny vision of far-away places where the people are exactly who you want to spend your time around — but this blatantly ignores the fact that most of the people you interact with are tailoring their external personas to adapt to the social norms in given environments. Want people to be more authentic, not flex on you, and to have a real conversation? Take the first leap. People who think others are boring are usually just projecting — the secret to having great conversations is being a great conversationalist, and most people have really interesting things to share if you know the right questions to ask."
-        },
-        // Add more paragraphs as needed
-      ]
-    },
-    {
       "title": "Entrepreneurship @ Western University: An Opinion Piece",
       "content": [
         {
