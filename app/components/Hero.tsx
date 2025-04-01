@@ -18,7 +18,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="text-sm text-gray-300 mb-8"
       >
-        ⚲ seattle, wa.
+        ⚲ seattle, wa
         <span className="font-mono text-[8px] ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-gray-500">
           {`(｀・ω・´)`}
         </span>

@@ -16,7 +16,7 @@ export default function LoadingScreen() {
           }
           return prevCount + 1;
         });
-      }, 20); // Adjust timing to complete in ~2 seconds
+      }, 20);
   
       return () => clearInterval(interval);
     }, []);
@@ -34,17 +34,20 @@ export default function LoadingScreen() {
         backgroundRepeat: 'repeat',
       }}
     >
-      
-      <div className="absolute bottom-8 right-8">
-        <motion.h1 
-          className="text-[200px] font-bold text-black"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          {count}
-        </motion.h1>
-      </div>
+<div className="absolute bottom-12 left-8 right-8">
+  <div className="flex flex-col md:flex-row justify-between md:items-end h-full">
+    <p className="text-xl text-black mb-4 hidden md:block">an aileen inspired loading page</p>
+    <motion.h1 
+      className="text-[150px] md:text-[250px] font-bold text-black leading-none"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
+      {count}
+      <span className="text-xl text-black"> [%]</span>
+    </motion.h1>
+  </div>
+</div>
     </motion.div>
   );
 } 
