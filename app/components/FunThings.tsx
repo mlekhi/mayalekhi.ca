@@ -54,6 +54,8 @@ const funThings: FunThing[] = [
     parts: [
       { text: "i'm currently working on building a " },
       { text: "mind controlled robot", style: "italic" },
+      { text: " and " },
+      { text: "duolingo for shipping", style: "underline", href: "https://ship.vennlabs.io/" },
       { text: "." }
     ]
   }
