@@ -19,11 +19,6 @@ const galleryItems: GalleryItem[] = [
     link: "https://lu.ma/75qc0lv2/"
   },
   {
-    title: "House Western",
-    image: "/gallery/houseWestern.png",
-    link: "https://www.housewestern.ca/"
-  },
-  {
     title: "Momentum",
     image: "/gallery/momentum.png",
     link: "https://momentum.place"
@@ -34,16 +29,20 @@ const galleryItems: GalleryItem[] = [
     link: "https://github.com/mlekhi/empa"
   },
   {
-    title: "Shippy",
-    image: "/gallery/shippy.png",
-    link: "https://ship.vennlabs.io/"
-  },  
-  {
     title: "Alchemy",
     image: "/gallery/alchemy-2.png",
     link: "https://lu.ma/75qc0lv2/"
   },
-
+  {
+    title: "Momentum",
+    image: "/gallery/momentum-2.png",
+    link: "https://momentum.place/"
+  },
+  {
+    title: "House Western",
+    image: "/gallery/houseWestern.png",
+    link: "https://www.housewestern.ca/"
+  },
 ];
 
 const breakpointColumns = {
