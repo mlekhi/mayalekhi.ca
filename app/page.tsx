@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import MenuBar from "./components/MenuBar";
 import DesignGallery from "./components/DesignGallery";
@@ -11,41 +11,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
-
-// Shared animation variants that can be used across components
-export const fadeIn: Variants = {
-  hidden: { opacity: 0 },
-  show: { 
-    opacity: 1,
-    transition: {
-      duration: 0.8,
-      ease: [0.25, 0.1, 0.25, 1],
-    }
-  }
-};
-
-export const slideUp: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  show: { 
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: [0.25, 0.1, 0.25, 1],
-    }
-  }
-};
-
-export const staggerContainer: Variants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.1
-    }
-  }
-};
+import { fadeIn, slideUp, staggerContainer } from './animations';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
