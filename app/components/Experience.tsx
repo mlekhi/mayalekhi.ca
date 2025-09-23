@@ -11,7 +11,7 @@ const experiences: ExperienceItem[] = [
     title: "Software Engineer Intern",
     company: "Microsoft",
     companyUrl: "https://microsoft.com/",
-    period: "May 2025 - Aug 2025",
+    period: "2025",
     description: "Built Copilot-powered visual creation flow in Power BI using Angular, React, TypeScript, and C#; implemented NL2FOPL for semantic parsing, reducing prompt failure rates by 32% for 5M+ monthly active users."
   },
   {
