@@ -8,11 +8,11 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    title: "AI Evaluation Analyst",
-    company: "Mercor",
-    companyUrl: "https://mercor.com/",
-    period: "2025",
-    description: "Audited 400+ AI-generated Python responses to detect hallucinations and deception, enhancing OpenAI's eval datasets for model finetuning."
+    title: "Software Engineer Intern",
+    company: "Microsoft",
+    companyUrl: "https://microsoft.com/",
+    period: "May 2025 - Aug 2025",
+    description: "Built Copilot-powered visual creation flow in Power BI using Angular, React, TypeScript, and C#; implemented NL2FOPL for semantic parsing, reducing prompt failure rates by 32% for 5M+ monthly active users."
   },
   {
     title: "ML Infrastructure Engineer",
