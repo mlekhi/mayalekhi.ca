@@ -17,11 +17,11 @@ export default function Home() {
       animate="show"
       className="min-h-screen bg-black text-white"
     >
-      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-8">
-        <motion.div variants={fadeIn}>
-          <MenuBar isVisible={true} />
-        </motion.div>
-        
+      <motion.div variants={fadeIn}>
+        <MenuBar isVisible={true} />
+      </motion.div>
+      
+      <div className="max-w-[1200px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
         <motion.main 
           variants={staggerContainer}
           className="relative"

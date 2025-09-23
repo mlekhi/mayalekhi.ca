@@ -14,7 +14,7 @@ export default function MenuBar({ isVisible }: MenuBarProps) {
       transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
       className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-sm border-b border-gray-800 z-[100]"
     >
-      <div className="max-w-5xl mx-auto px-8 h-10 flex items-center justify-between">
+      <div className="w-full px-8 h-10 flex items-center justify-between">
         <div className="relative group">
           <div className="text-xs font-semibold tracking-tight text-white">
             maya lekhi
