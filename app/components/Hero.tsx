@@ -18,7 +18,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="text-sm text-gray-300 mb-8"
       >
-        ⚲ seattle, wa
+        ⚲ toronto, on
         <span className="font-mono text-[8px] ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-gray-500">
           {`(｀・ω・´)`}
         </span>
@@ -49,7 +49,7 @@ export default function Hero() {
         className="mt-8 space-y-4"
       >
         <p className="text-xl md:text-2xl text-gray-300">
-          product engineer / designer / community builder
+          product engineer + community builder + occasional writer
         </p>
         <p className="text-base md:text-lg text-gray-400 max-w-xl">
           building tools that feel like intuition and communities that feel like home.
