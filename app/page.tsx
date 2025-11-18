@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import MenuBar from "./components/MenuBar";
-import DesignGallery from "./components/DesignGallery";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import FunThings from "./components/FunThings";
@@ -37,10 +36,6 @@ export default function Home() {
           <div className="space-y-40">
             <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[90vh] flex items-center">
               <Experience />
-            </motion.div>
-
-            <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[90vh] flex items-center">
-              <DesignGallery />
             </motion.div>
 
             <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[80vh] flex items-center">
