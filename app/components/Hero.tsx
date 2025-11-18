@@ -58,23 +58,6 @@ export default function Hero() {
           </span>
         </p>
       </motion.div>
-
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ 
-          opacity: [0, 1, 1],
-          y: [0, 10, 0]
-        }}
-        transition={{ 
-          duration: 1.5,
-          ease: "easeInOut",
-          repeat: Infinity,
-          delay: 1
-        }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400"
-      >
-        ↓
-      </motion.div>
     </motion.section>
   );
 } 
