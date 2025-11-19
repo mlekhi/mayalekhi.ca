@@ -19,9 +19,6 @@ export default function Hero() {
         className="text-sm text-gray-300 mb-8"
       >
         ⚲ toronto, on
-        <span className="font-mono text-[8px] ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-gray-500">
-          {`(｀・ω・´)`}
-        </span>
       </motion.p>
 
       <div className="overflow-hidden leading-[1.2] py-1">
@@ -53,9 +50,6 @@ export default function Hero() {
         </p>
         <p className="text-base md:text-lg text-gray-400 max-w-3xl">
           building tools that feel like intuition and communities that feel like home.
-          <span className="font-mono text-[8px] ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-gray-500">
-            {`(◕‿◕✿)`}
-          </span>
         </p>
       </motion.div>
     </motion.section>

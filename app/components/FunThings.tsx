@@ -64,9 +64,6 @@ export default function FunThings() {
     <section className="w-full h-full flex flex-col justify-center">
       <h2 className="text-4xl font-medium mb-12 relative text-white">
         fun things
-        <span className="font-mono text-sm absolute -right-8 top-0 opacity-0 group-hover:opacity-100 transition-opacity text-gray-400">
-          {`ʕ•̫͡•ʔ`}
-        </span>
       </h2>
       <div className="space-y-8">
         {funThings.map((thing, index) => (
@@ -99,9 +96,6 @@ export default function FunThings() {
                 ))}
               </p>
             </div>
-            <span className="font-mono text-sm absolute -right-8 top-0 opacity-0 group-hover/item:opacity-100 transition-opacity text-gray-400">
-              {`ʕ•̫͡•ʔ`}
-            </span>
           </div>
         ))}
       </div>

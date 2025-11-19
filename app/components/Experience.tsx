@@ -13,6 +13,12 @@ const experiences: ExperienceItem[] = [
     period: "2025"
   },
   {
+    title: "Senior Research Fellow",
+    company: "Contrary",
+    companyUrl: "https://contrary.com/",
+    period: "2025"
+  },
+  {
     title: "ML Infrastructure Engineer",
     company: "Borealis AI",
     companyUrl: "https://borealisai.com",

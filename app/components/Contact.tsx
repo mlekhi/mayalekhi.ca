@@ -10,9 +10,6 @@ export default function Contact() {
               together
               <span className="text-gray-500">.</span>
             </h2>
-            <span className="font-mono text-sm opacity-0 group-hover:opacity-100 transition-opacity text-gray-400">
-              {`૮ ˶ᵔ ᵕ ᵔ˶ ა`}
-            </span>
           </div>
           
           <p className="text-base text-gray-300 tracking-tight max-w-2xl">
@@ -25,9 +22,6 @@ export default function Contact() {
         <div className="inline-flex flex-col items-start group/email">
           <span className="text-sm text-gray-400 font-mono mb-2 flex items-center gap-2">
             → send me a note
-            <span className="opacity-0 group-hover/email:opacity-100 transition-all duration-300">
-              {`(✉️)`}
-            </span>
           </span>
           <a 
             href="mailto:maya.lekhi1@gmail.com" 
