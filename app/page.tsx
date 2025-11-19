@@ -20,7 +20,7 @@ export default function Home() {
         <MenuBar isVisible={true} />
       </motion.div>
       
-      <div className="max-w-[1200px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
+      <div className="max-w-[1920px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
         <motion.main 
           variants={staggerContainer}
           className="relative"

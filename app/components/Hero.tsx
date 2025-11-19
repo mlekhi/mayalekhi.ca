@@ -51,7 +51,7 @@ export default function Hero() {
         <p className="text-xl md:text-2xl text-gray-300">
           product engineer + community builder + occasional writer
         </p>
-        <p className="text-base md:text-lg text-gray-400 max-w-xl">
+        <p className="text-base md:text-lg text-gray-400 max-w-3xl">
           building tools that feel like intuition and communities that feel like home.
           <span className="font-mono text-[8px] ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-gray-500">
             {`(◕‿◕✿)`}

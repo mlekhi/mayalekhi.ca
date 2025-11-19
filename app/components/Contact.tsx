@@ -15,7 +15,7 @@ export default function Contact() {
             </span>
           </div>
           
-          <p className="text-base text-gray-300 tracking-tight max-w-md">
+          <p className="text-base text-gray-300 tracking-tight max-w-2xl">
             want to collaborate? chat?
             <br />
             i'm always down to meet curious and kind people.
