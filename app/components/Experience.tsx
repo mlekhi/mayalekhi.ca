@@ -35,7 +35,7 @@ const experiences: ExperienceItem[] = [
 export default function Experience() {
   return (
     <section className="w-full flex flex-col justify-center">
-      <div className="space-y-12">
+      <div className="space-y-4">
         {experiences.map((exp, index) => (
           <div key={index} className="group/item">
             <div className="flex items-baseline gap-3">
