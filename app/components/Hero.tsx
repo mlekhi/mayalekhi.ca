@@ -10,7 +10,7 @@ export default function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="relative group min-h-[90vh] flex flex-col justify-center"
+      className="relative group flex flex-col justify-center"
     >
       <motion.p 
         initial={{ opacity: 0, y: 20 }}

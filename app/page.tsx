@@ -25,18 +25,18 @@ export default function Home() {
           variants={staggerContainer}
           className="relative"
         >
-          {/* Hero with snap scroll */}
+          {/* Hero and Experience side by side */}
           <div className="h-screen snap-y snap-mandatory overflow-y-auto">
             <motion.div variants={slideUp} viewport={{ once: true }} className="snap-start min-h-[90vh] flex items-center">
-              <Hero />
+              <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <Hero />
+                <Experience />
+              </div>
             </motion.div>
           </div>
 
           {/* Rest of the sections with normal scroll */}
           <div className="space-y-40">
-            <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[90vh] flex items-center">
-              <Experience />
-            </motion.div>
 
             <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[80vh] flex items-center">
               <FunThings />
