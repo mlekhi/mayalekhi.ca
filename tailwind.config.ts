@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-space-grotesk)'],
-        'space-grotesk': ['var(--font-space-grotesk)'],
+        sans: ['var(--font-acid-grotesk)'],
+        'acid-grotesk': ['var(--font-acid-grotesk)'],
       },
     },
   },

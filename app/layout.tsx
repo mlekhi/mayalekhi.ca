@@ -1,11 +1,101 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({ 
-  subsets: ["latin"],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-space-grotesk',
+const acidGrotesk = localFont({
+  src: [
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-UltraLight-TRIAL.otf',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-UltraLight-Italic-TRIAL.otf',
+      weight: '100',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-ExtraLight-TRIAL.otf',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-ExtraLight-Italic-TRIAL.otf',
+      weight: '200',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Light-TRIAL.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Light-Italic-TRIAL.otf',
+      weight: '300',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Normal-TRIAL.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Norma-Italic-TRIAL.otf',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Regular-TRIAL.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Regular-Italic-TRIAL.otf',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Medium-TRIAL.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Medium-Italic-TRIAL.otf',
+      weight: '500',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Bold-TRIAL.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Bold-Italic-TRIAL.otf',
+      weight: '700',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-ExtraBold-TRIAL.otf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-ExtraBold-Italic-TRIAL.otf',
+      weight: '800',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Black-TRIAL.otf',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/FFF-AcidGrotesk-Black-Italic-TRIAL.otf',
+      weight: '900',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-acid-grotesk',
   display: 'swap',
 });
 
@@ -20,8 +110,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} dark`}>
-      <body className={`${spaceGrotesk.className} bg-black text-white`}>{children}</body>
+    <html lang="en" className={`${acidGrotesk.variable} dark`}>
+      <body className={`${acidGrotesk.className} bg-black text-white`}>{children}</body>
     </html>
   );
 }
