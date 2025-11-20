@@ -12,6 +12,11 @@ type GalleryItem = {
 
 const galleryItems: GalleryItem[] = [
   {
+    title: "Mustangs Networ",
+    image: "/gallery/mustangs.png",
+    link: "https://mustangs.network/"
+  },
+  {
     title: "Alchemy",
     image: "/gallery/alchemy.png",
     link: "https://lu.ma/75qc0lv2/"
