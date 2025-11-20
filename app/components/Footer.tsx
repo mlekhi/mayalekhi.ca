@@ -6,7 +6,7 @@ export default function Footer() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-      className="w-full bg-black/80 backdrop-blur-sm border-t border-gray-800"
+      className="w-full bg-black/80 backdrop-blur-sm border-t border-gray-800 relative z-[100]"
     >
       <div className="w-full px-8 h-12 flex items-center justify-center">
         <a 

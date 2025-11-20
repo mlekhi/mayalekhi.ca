@@ -12,7 +12,7 @@ export default function MenuBar({ isVisible }: MenuBarProps) {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
       transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-      className="bg-black/80 backdrop-blur-sm border-b border-gray-800 z-[100]"
+      className="bg-black/80 backdrop-blur-sm border-b border-gray-800 relative z-[100]"
     >
       <div className="w-full px-8 h-12 flex items-center justify-between">
           <div className="text-sm tracking-tight text-white">

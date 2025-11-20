@@ -19,7 +19,7 @@ export default function Home() {
       className="min-h-screen bg-black text-white relative"
     >
       {/* Fixed progressive blur overlay at top */}
-      <div className="fixed top-0 left-0 right-0 h-14 pointer-events-none z-30">
+      <div className="fixed top-0 left-0 right-0 h-14 pointer-events-none z-10">
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, backdropFilter: 'blur(0.078125px)', WebkitBackdropFilter: 'blur(0.078125px)', maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 37.5%)', WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 37.5%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', inset: 0, zIndex: 2, backdropFilter: 'blur(0.15625px)', WebkitBackdropFilter: 'blur(0.15625px)', maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 12.5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 37.5%, rgba(0, 0, 0, 0) 50%)', WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 12.5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 37.5%, rgba(0, 0, 0, 0) 50%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', inset: 0, zIndex: 3, backdropFilter: 'blur(0.3125px)', WebkitBackdropFilter: 'blur(0.3125px)', maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 37.5%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 62.5%)', WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 37.5%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 62.5%)', pointerEvents: 'none' }} />
@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       
       {/* Fixed progressive blur overlay at bottom */}
-      <div className="fixed bottom-0 left-0 right-0 h-14 pointer-events-none z-30">
+      <div className="fixed bottom-0 left-0 right-0 h-14 pointer-events-none z-10">
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, backdropFilter: 'blur(0.078125px)', WebkitBackdropFilter: 'blur(0.078125px)', maskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 37.5%)', WebkitMaskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 37.5%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', inset: 0, zIndex: 2, backdropFilter: 'blur(0.15625px)', WebkitBackdropFilter: 'blur(0.15625px)', maskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 12.5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 37.5%, rgba(0, 0, 0, 0) 50%)', WebkitMaskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 12.5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 37.5%, rgba(0, 0, 0, 0) 50%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', inset: 0, zIndex: 3, backdropFilter: 'blur(0.3125px)', WebkitBackdropFilter: 'blur(0.3125px)', maskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 37.5%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 62.5%)', WebkitMaskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 37.5%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 62.5%)', pointerEvents: 'none' }} />
