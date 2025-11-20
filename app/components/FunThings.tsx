@@ -58,7 +58,7 @@ export default function FunThings() {
   return (
     <section className="w-full h-full flex flex-col justify-center">
       <h2 className="text-4xl font-medium mb-12 relative text-white">
-        fun things
+        fun facts
       </h2>
       <div className="space-y-4">
         {funThings.map((thing, index) => (
