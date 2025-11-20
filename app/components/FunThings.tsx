@@ -16,15 +16,13 @@ const funThings: FunThing[] = [
       { text: "i created a " },
       { text: "250+ member " },
       { text: "coworking community", style: "underline", href: "https://momentum.place" },
-      { text: " for " },
-      { text: "hobbyists & side project hustlers", style: "italic" },
-      { text: " in london, ontario." }
+      { text: " for hobbyists and side project hustlers in london, ontario." },
     ]
   },
   {
     parts: [
       { text: "i am " },
-      { text: "deeply obsessed", style: "italic" },
+      { text: "obsessed", style: "italic" },
       { text: " with " },
       { text: "severance", style: "underline", href: "https://www.apple.com/tv-pr/originals/severance/" },
       { text: " fan theories." }
@@ -34,9 +32,7 @@ const funThings: FunThing[] = [
     parts: [
       { text: "i've thrown a series of " },
       { text: "matchmaking events", style: "underline", href: "https://www.instagram.com/p/DAq9h5bSiG1/?img_index=1" },
-      { text: ", which started because i wanted " },
-      { text: "two of my friends", style: "italic" },
-      { text: " to date." }
+      { text: ", which started because i wanted two of my friends to date." },
     ]
   },
   {
