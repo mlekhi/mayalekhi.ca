@@ -39,7 +39,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     title: "Momentum",
-    image: "/gallery/momentum.png",
+    image: "/gallery/momentum.gif",
     link: "https://momentum.place/"
   },
   {
