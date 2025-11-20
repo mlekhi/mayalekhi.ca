@@ -20,12 +20,12 @@ export default function Contact() {
         </div>
 
         <div className="inline-flex flex-col items-start group/email">
-          <span className="text-sm text-gray-400 font-mono mb-2 flex items-center gap-2">
-            → send me a note
+          <span className="text-sm text-gray-400 font-mono mb-2 flex items-center gap-2 uppercase">
+            → SEND ME A NOTE
           </span>
           <a 
             href="mailto:maya.lekhi1@gmail.com" 
-            className="text-base font-mono text-white hover:text-blue-400 transition-colors relative group/link"
+            className="text-base text-white hover:text-blue-400 transition-colors relative group/link"
           >
             maya.lekhi1@gmail.com
             <span className="absolute -bottom-px left-0 w-0 h-px bg-blue-400 transition-all group-hover/link:w-full"></span>
