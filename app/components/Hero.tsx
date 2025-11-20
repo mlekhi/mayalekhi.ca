@@ -10,7 +10,7 @@ export default function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="relative group flex flex-col justify-center"
+      className="relative group flex flex-col justify-center pt-24 md:pt-0"
     >
       <motion.p 
         initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export default function Hero() {
               delay: 0.2 + (index * 0.03),
               ease: [0.25, 0.1, 0.25, 1]
             }}
-            className="text-7xl md:text-8xl lg:text-9xl font-normal tracking-tight inline-block text-white"
+            className="text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight inline-block text-white"
           >
             {char === ' ' ? '\u00A0' : char}
           </motion.span>

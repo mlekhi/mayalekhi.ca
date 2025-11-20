@@ -27,14 +27,12 @@ export default function Home() {
           className="relative"
         >
           {/* Hero and Experience side by side */}
-          <div className="h-screen snap-y snap-mandatory overflow-y-auto">
-            <motion.div variants={slideUp} viewport={{ once: true }} className="snap-start min-h-[90vh] flex items-center">
-              <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <Hero />
-                <Experience />
-              </div>
-            </motion.div>
-          </div>
+          <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[90vh] flex items-center">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-12 lg:gap-16 items-center">
+              <Hero />
+              <Experience />
+            </div>
+          </motion.div>
 
           {/* Rest of the sections with normal scroll */}
           <div className="space-y-40">
