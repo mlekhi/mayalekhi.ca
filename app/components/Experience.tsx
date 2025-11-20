@@ -43,7 +43,23 @@ const experiences: ExperienceItem[] = [
 export default function Experience() {
   return (
     <section className="w-full flex flex-col justify-center">
-      <div className="grid grid-cols-[auto_auto_auto] gap-x-3 gap-y-1 items-baseline">
+      {/* Mobile: Year on left, company/title stacked on right */}
+      <div className="flex flex-col space-y-4 md:hidden">
+        {experiences.map((exp, index) => (
+          <div key={index} className="flex gap-6">
+            <span className="text-sm text-gray-400 font-mono uppercase">{exp.period}</span>
+            <div className="flex flex-col">
+              <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-base text-white hover:text-purple-300 transition-colors">
+                {exp.company}
+              </a>
+              <span className="text-base font-normal text-gray-400">{exp.title}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      {/* Desktop: Grid layout */}
+      <div className="hidden md:grid grid-cols-[auto_auto_auto] gap-x-3 gap-y-1 items-baseline">
         {experiences.map((exp, index) => (
           <React.Fragment key={index}>
             <span className="text-sm text-gray-400 font-mono uppercase">{exp.period}</span>
