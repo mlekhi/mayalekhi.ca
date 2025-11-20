@@ -27,12 +27,21 @@ export default function Home() {
           className="relative"
         >
           {/* Hero and Experience side by side */}
-          <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[90vh] flex items-center">
+          <div className="min-h-[90vh] flex items-center">
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-12 lg:gap-16 items-center">
-              <Hero />
-              <Experience />
+              <motion.div variants={slideUp} viewport={{ once: true }}>
+                <Hero />
+              </motion.div>
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4, duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+              >
+                <Experience />
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Rest of the sections with normal scroll */}
           <div className="space-y-40">
