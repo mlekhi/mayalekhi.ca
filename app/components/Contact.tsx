@@ -25,10 +25,10 @@ export default function Contact() {
           </span>
           <a 
             href="mailto:maya.lekhi1@gmail.com" 
-            className="text-base text-white hover:text-blue-400 transition-colors relative group/link"
+            className="text-base text-white hover:text-purple-300 transition-colors relative group/link"
           >
             maya.lekhi1@gmail.com
-            <span className="absolute -bottom-px left-0 w-0 h-px bg-blue-400 transition-all group-hover/link:w-full"></span>
+            <span className="absolute -bottom-px left-0 w-0 h-px bg-purple-300 transition-all group-hover/link:w-full"></span>
           </a>
         </div>
       </div>
