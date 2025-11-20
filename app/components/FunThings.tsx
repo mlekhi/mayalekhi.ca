@@ -77,7 +77,7 @@ export default function FunThings() {
                       href={part.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white underline decoration-[1px] underline-offset-2 hover:decoration-2 hover:text-blue-400 transition-all"
+                      className="text-white hover:text-purple-300 transition-colors"
                     >
                       {part.text}
                     </a>

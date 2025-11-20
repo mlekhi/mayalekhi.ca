@@ -45,7 +45,7 @@ export default function Experience() {
         {experiences.map((exp, index) => (
           <>
             <span key={`${index}-period`} className="text-sm text-gray-400 font-mono uppercase">{exp.period}</span>
-            <a key={`${index}-company`} href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-base text-white hover:text-gray-300 transition-colors">
+            <a key={`${index}-company`} href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-base text-white hover:text-purple-300 transition-colors">
               {exp.company}
             </a>
             <span key={`${index}-title`} className="text-base font-normal text-gray-400">{exp.title}</span>
