@@ -69,7 +69,7 @@ export default function FunThings() {
         {funThings.map((thing, index) => (
           <div key={index} className="group/item relative">
             <div className="flex gap-6">
-              <span className="text-md text-white/60 font-mono">
+              <span className="text-md text-white/60 font-mono uppercase">
                 {String(index + 1).padStart(2, '0')}
               </span>
               
