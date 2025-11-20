@@ -152,8 +152,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Maya Lekhi",
-  description: "Personal portfolio of Maya Lekhi",
+  title: "maya lekhi",
+  description: "maya's personal site",
 };
 
 export default function RootLayout({
