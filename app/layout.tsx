@@ -99,6 +99,58 @@ const acidGrotesk = localFont({
   display: 'swap',
 });
 
+const geistMono = localFont({
+  src: [
+    {
+      path: '../public/fonts/GeistMono-Thin.ttf',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/GeistMono-UltraLight.ttf',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/GeistMono-Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/GeistMono-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/GeistMono-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/GeistMono-SemiBold.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/GeistMono-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/GeistMono-Black.ttf',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/GeistMono-UltraBlack.ttf',
+      weight: '950',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-geist-mono',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: "Maya Lekhi",
   description: "Personal portfolio of Maya Lekhi",
@@ -110,7 +162,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${acidGrotesk.variable} dark`}>
+    <html lang="en" className={`${acidGrotesk.variable} ${geistMono.variable} dark`}>
       <body className={`${acidGrotesk.className} bg-black text-white`}>{children}</body>
     </html>
   );

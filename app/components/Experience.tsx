@@ -45,7 +45,7 @@ export default function Experience() {
         {experiences.map((exp, index) => (
           <div key={index} className="group/item">
             <div className="flex items-baseline gap-3">
-              <span className="text-sm text-gray-400">{exp.period}</span>
+              <span className="text-sm text-gray-400 font-mono">{exp.period}</span>
               <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-base text-white hover:text-gray-300 transition-colors">
                 {exp.company}
               </a>

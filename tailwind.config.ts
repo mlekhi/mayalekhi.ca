@@ -11,6 +11,8 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-acid-grotesk)'],
         'acid-grotesk': ['var(--font-acid-grotesk)'],
+        mono: ['var(--font-geist-mono)'],
+        'geist-mono': ['var(--font-geist-mono)'],
       },
     },
   },
