@@ -46,7 +46,7 @@ export default function Hero() {
         className="mt-8 space-y-4"
       >
         <p className="text-xl md:text-2xl text-gray-300">
-          product engineer + community builder + occasional writer
+          product engineer + community builder + writer
         </p>
       </motion.div>
     </motion.section>
