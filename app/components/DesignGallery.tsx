@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useRef, useEffect } from 'react';
 import styles from './DesignGallery.module.css';
 
 type GalleryItem = {
@@ -12,9 +13,14 @@ type GalleryItem = {
 
 const galleryItems: GalleryItem[] = [
   {
-    title: "Mustangs Networ",
+    title: "Mustangs Network",
     image: "/gallery/mustangs.png",
     link: "https://mustangs.network/"
+  },
+  {
+    title: "Afore Grants",
+    image: "/gallery/afore.png",
+    link: "https://grants.afore.vc/"
   },
   {
     title: "Alchemy",
@@ -54,27 +60,72 @@ const galleryItems: GalleryItem[] = [
 ];
 
 export default function DesignGallery() {
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
+  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    imageRefs.current.forEach((ref, index) => {
+      if (!ref) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setLoadedImages((prev) => new Set(prev).add(index));
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          rootMargin: '200px', // Start loading 200px before image enters viewport
+          threshold: 0.01,
+        }
+      );
+
+      observer.observe(ref);
+      observers.push(observer);
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+
   return (
     <div className={styles.masonryGrid}>
-      {galleryItems.map((item) => (
-        <div key={`${item.image}-${item.title}`} className={styles.masonryItem}>
+      {galleryItems.map((item, index) => (
+        <div 
+          key={`${item.image}-${item.title}`} 
+          className={styles.masonryItem}
+          ref={(el) => {
+            imageRefs.current[index] = el;
+          }}
+        >
           <Link 
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
             className="block relative w-full group"
           >
-            <div className="relative w-full overflow-hidden">
-              <Image
-                src={item.image}
-                alt={item.title}
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-full h-auto transition-all duration-500 hover:scale-105"
-                priority={false}
-                unoptimized
-              />
+            <div className="relative w-full overflow-hidden aspect-auto">
+              {loadedImages.has(index) || index < 2 ? (
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={800}
+                  height={600}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="w-full h-auto transition-all duration-500 hover:scale-105"
+                  priority={index < 2}
+                  loading={index < 2 ? "eager" : "lazy"}
+                  quality={85}
+                  unoptimized={item.image.endsWith('.gif')}
+                />
+              ) : (
+                <div className="w-full aspect-video bg-gray-900 animate-pulse" />
+              )}
             </div>
           </Link>
         </div>
