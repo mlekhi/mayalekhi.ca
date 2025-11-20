@@ -14,8 +14,7 @@ const funThings: FunThing[] = [
   {
     parts: [
       { text: "i created a " },
-      { text: "250+ member " },
-      { text: "coworking community", style: "underline", href: "https://momentum.place" },
+      { text: "250+ member coworking community", style: "underline", href: "https://momentum.place" },
       { text: " for hobbyists and side project hustlers in london, ontario." },
     ]
   },
@@ -30,8 +29,8 @@ const funThings: FunThing[] = [
   },
   {
     parts: [
-      { text: "i've thrown a series of " },
-      { text: "matchmaking events", style: "underline", href: "https://www.instagram.com/p/DAq9h5bSiG1/?img_index=1" },
+      { text: "i've thrown a " },
+      { text: "series of matchmaking events", style: "underline", href: "https://www.instagram.com/p/DAq9h5bSiG1/?img_index=1" },
       { text: ", which started because i wanted two of my friends to date." },
     ]
   },
