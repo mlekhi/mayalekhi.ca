@@ -17,6 +17,16 @@ const galleryItems: GalleryItem[] = [
     link: "https://lu.ma/75qc0lv2/"
   },
   {
+    title: "SOLO",
+    image: "/gallery/SOLO.gif",
+    link: "https://solo-founding.vercel.app/"
+  },
+  {
+    title: "Momentum",
+    image: "/gallery/momentum.png",
+    link: "https://momentum.place/"
+  },
+  {
     title: "Empa",
     image: "/gallery/empa.png",
     link: "https://github.com/mlekhi/empa"
