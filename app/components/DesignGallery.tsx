@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from './DesignGallery.module.css';
 
 type GalleryItem = {
   title: string;
@@ -44,28 +45,29 @@ const galleryItems: GalleryItem[] = [
 
 export default function DesignGallery() {
   return (
-    <div className="w-full">
+    <div className={styles.masonryGrid}>
       {galleryItems.map((item) => (
-        <Link 
-          key={`${item.image}-${item.title}`}
-          href={item.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block relative w-full group mb-8"
-        >
-          <div className="relative w-full overflow-hidden">
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-auto transition-all duration-500 hover:scale-105"
-              priority={false}
-              unoptimized
-            />
-          </div>
-        </Link>
+        <div key={`${item.image}-${item.title}`} className={styles.masonryItem}>
+          <Link 
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block relative w-full group"
+          >
+            <div className="relative w-full overflow-hidden">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-auto transition-all duration-500 hover:scale-105"
+                priority={false}
+                unoptimized
+              />
+            </div>
+          </Link>
+        </div>
       ))}
     </div>
   );
