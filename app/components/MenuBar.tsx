@@ -15,12 +15,10 @@ export default function MenuBar({ isVisible }: MenuBarProps) {
       className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-sm border-b border-gray-800 z-[100]"
     >
       <div className="w-full px-8 h-12 flex items-center justify-between">
-        <Link href="/" className="relative group">
           <div className="text-sm tracking-tight text-white">
             maya lekhi
           </div>
           <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 ease-out group-hover:w-full"></div>
-        </Link>
         <div className="flex items-center space-x-6">
           <a
             href="mailto:maya.lekhi1@gmail.com"
