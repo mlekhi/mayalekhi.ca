@@ -59,7 +59,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     title: "Stupid Hackathon",
-    image: "/gallery/stupid-hackathon.png",
+    image: "/gallery/stupid-hackathon.gif",
     link: "https://luma.com/9qwilan6"
   }
 ];
