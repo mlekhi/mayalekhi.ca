@@ -17,11 +17,6 @@ const galleryItems: GalleryItem[] = [
     link: "https://lu.ma/75qc0lv2/"
   },
   {
-    title: "Momentum",
-    image: "/gallery/momentum.png",
-    link: "https://momentum.place"
-  },
-  {
     title: "Empa",
     image: "/gallery/empa.png",
     link: "https://github.com/mlekhi/empa"
@@ -36,6 +31,11 @@ const galleryItems: GalleryItem[] = [
     image: "/gallery/houseWestern.png",
     link: "https://www.housewestern.ca/"
   },
+  {
+    title: "Stupid Hackathon",
+    image: "/gallery/stupid-hackathon.png",
+    link: "https://luma.com/9qwilan6"
+  }
 ];
 
 export default function DesignGallery() {

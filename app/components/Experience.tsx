@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface ExperienceItem {
   title: string;
   company: string;
@@ -43,13 +45,13 @@ export default function Experience() {
     <section className="w-full flex flex-col justify-center">
       <div className="grid grid-cols-[auto_auto_auto] gap-x-3 gap-y-1 items-baseline">
         {experiences.map((exp, index) => (
-          <>
-            <span key={`${index}-period`} className="text-sm text-gray-400 font-mono uppercase">{exp.period}</span>
-            <a key={`${index}-company`} href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-base text-white hover:text-purple-300 transition-colors">
+          <React.Fragment key={index}>
+            <span className="text-sm text-gray-400 font-mono uppercase">{exp.period}</span>
+            <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-base text-white hover:text-purple-300 transition-colors">
               {exp.company}
             </a>
-            <span key={`${index}-title`} className="text-base font-normal text-gray-400">{exp.title}</span>
-          </>
+            <span className="text-base font-normal text-gray-400">{exp.title}</span>
+          </React.Fragment>
         ))}
       </div>
     </section>
