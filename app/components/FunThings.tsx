@@ -65,7 +65,7 @@ export default function FunThings() {
       <h2 className="text-4xl font-medium mb-12 relative text-white">
         fun things
       </h2>
-      <div className="space-y-8">
+      <div className="space-y-4">
         {funThings.map((thing, index) => (
           <div key={index} className="group/item relative">
             <div className="flex gap-6">
@@ -73,7 +73,7 @@ export default function FunThings() {
                 {String(index + 1).padStart(2, '0')}
               </span>
               
-              <p className="text-base text-white leading-relaxed">
+              <p className="text-base text-white leading-normal">
                 {thing.parts.map((part, partIndex) => (
                   part.href ? (
                     <a 
