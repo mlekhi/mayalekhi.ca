@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import MenuBar from "./components/MenuBar";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
+import DesignGallery from "./components/DesignGallery";
 import FunThings from "./components/FunThings";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -37,6 +38,9 @@ export default function Home() {
 
           {/* Rest of the sections with normal scroll */}
           <div className="space-y-40">
+            <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[90vh] flex items-center pt-20">
+              <DesignGallery />
+            </motion.div>
 
             <motion.div variants={slideUp} viewport={{ once: true }} className="min-h-[80vh] flex items-center">
               <FunThings />
