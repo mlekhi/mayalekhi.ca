@@ -45,7 +45,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.8 }}
         className="mt-8 space-y-4"
       >
-        <p className="text-xl md:text-2xl text-gray-300">
+        <p className="text-lg md:text-xl text-gray-300">
           product engineer + community builder + investor
         </p>
       </motion.div>
