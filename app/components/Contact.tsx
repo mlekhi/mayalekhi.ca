@@ -43,7 +43,8 @@ export default function Contact() {
             fill
             className="object-cover"
             priority={false}
-            unoptimized
+            loading="lazy"
+            quality={85}
           />
         </div>
       </div>
