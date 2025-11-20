@@ -32,11 +32,6 @@ const galleryItems: GalleryItem[] = [
     link: "https://lu.ma/75qc0lv2/"
   },
   {
-    title: "Momentum",
-    image: "/gallery/momentum-2.png",
-    link: "https://momentum.place/"
-  },
-  {
     title: "House Western",
     image: "/gallery/houseWestern.png",
     link: "https://www.housewestern.ca/"
