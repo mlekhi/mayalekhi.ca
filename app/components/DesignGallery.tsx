@@ -69,10 +69,19 @@ export default function DesignGallery() {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
+    // Preload first 3 images immediately
+    galleryItems.slice(0, 3).forEach((item, index) => {
+      if (!item.image.endsWith('.gif')) {
+        const img = new window.Image();
+        img.src = item.image;
+      }
+      setLoadedImages((prev) => new Set(prev).add(index));
+    });
+
     const observers: IntersectionObserver[] = [];
 
     imageRefs.current.forEach((ref, index) => {
-      if (!ref) return;
+      if (!ref || index < 3) return; // Skip first 3 as they're preloaded
 
       const observer = new IntersectionObserver(
         (entries) => {
@@ -84,7 +93,7 @@ export default function DesignGallery() {
           });
         },
         {
-          rootMargin: '200px', // Start loading 200px before image enters viewport
+          rootMargin: '500px', // Start loading 500px before image enters viewport
           threshold: 0.01,
         }
       );
@@ -115,17 +124,21 @@ export default function DesignGallery() {
             className="block relative w-full group"
           >
             <div className="relative w-full overflow-hidden aspect-auto">
-              {loadedImages.has(index) || index < 2 ? (
+              {loadedImages.has(index) || index < 3 ? (
                 <Image
                   src={item.image}
                   alt={item.title}
                   width={800}
                   height={600}
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="w-full h-auto transition-all duration-500 hover:scale-105"
-                  priority={index < 2}
-                  loading={index < 2 ? "eager" : "lazy"}
-                  quality={85}
+                  priority={index < 3}
+                  loading={index < 3 ? "eager" : "lazy"}
+                  quality={75}
+                  {...(!item.image.endsWith('.gif') && {
+                    placeholder: "blur",
+                    blurDataURL: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                  })}
                   unoptimized={item.image.endsWith('.gif')}
                 />
               ) : (
