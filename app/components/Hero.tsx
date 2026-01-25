@@ -18,7 +18,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="text-sm text-gray-300 mb-8 font-mono uppercase"
       >
-        ⚲ toronto, on
+        ⚲ san francisco, ca
       </motion.p>
 
       <div className="overflow-hidden leading-[1.2] py-1">

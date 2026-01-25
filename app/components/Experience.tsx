@@ -10,8 +10,20 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     title: "Software Engineer Intern",
+    company: "Notion",
+    companyUrl: "https://notion.com/",
+    period: "2026"
+  },
+  {
+    title: "Software Engineer Intern",
     company: "Microsoft",
     companyUrl: "https://microsoft.com/",
+    period: "2025"
+  },
+  {
+    title: "Scout",
+    company: "Afore",
+    companyUrl: "https://afore.vc/",
     period: "2025"
   },
   {
@@ -32,12 +44,6 @@ const experiences: ExperienceItem[] = [
     companyUrl: "https://meta.com",
     period: "2024"
   },
-  {
-    title: "Algorithm Engineer",
-    company: "COBWEB @ UofT",
-    companyUrl: "https://www.cobweb.ca/",
-    period: "2024"
-  }
 ];
 
 export default function Experience() {
