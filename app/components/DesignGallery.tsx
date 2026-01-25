@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './DesignGallery.module.css';
 
 type GalleryItem = {
@@ -66,45 +66,16 @@ const galleryItems: GalleryItem[] = [
 
 export default function DesignGallery() {
   const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
-  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    // Preload first 3 images immediately
-    galleryItems.slice(0, 3).forEach((item, index) => {
+    // Preload all images immediately
+    galleryItems.forEach((item, index) => {
       if (!item.image.endsWith('.gif')) {
         const img = new window.Image();
         img.src = item.image;
       }
       setLoadedImages((prev) => new Set(prev).add(index));
     });
-
-    const observers: IntersectionObserver[] = [];
-
-    imageRefs.current.forEach((ref, index) => {
-      if (!ref || index < 3) return; // Skip first 3 as they're preloaded
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setLoadedImages((prev) => new Set(prev).add(index));
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          rootMargin: '500px', // Start loading 500px before image enters viewport
-          threshold: 0.01,
-        }
-      );
-
-      observer.observe(ref);
-      observers.push(observer);
-    });
-
-    return () => {
-      observers.forEach((observer) => observer.disconnect());
-    };
   }, []);
 
   return (
@@ -113,9 +84,6 @@ export default function DesignGallery() {
         <div 
           key={`${item.image}-${item.title}`} 
           className={styles.masonryItem}
-          ref={(el) => {
-            imageRefs.current[index] = el;
-          }}
         >
           <Link 
             href={item.link}
@@ -124,7 +92,7 @@ export default function DesignGallery() {
             className="block relative w-full group"
           >
             <div className="relative w-full overflow-hidden aspect-auto">
-              {loadedImages.has(index) || index < 3 ? (
+              {loadedImages.has(index) ? (
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -132,8 +100,8 @@ export default function DesignGallery() {
                   height={600}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="w-full h-auto transition-all duration-500 hover:scale-105"
-                  priority={index < 3}
-                  loading={index < 3 ? "eager" : "lazy"}
+                  priority
+                  loading="eager"
                   quality={75}
                   {...(!item.image.endsWith('.gif') && {
                     placeholder: "blur",
