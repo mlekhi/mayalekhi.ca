@@ -22,31 +22,19 @@ export default function Hero() {
       </motion.p>
 
       <div className="overflow-hidden leading-[1.2] py-1">
-        {name.split(' ').map((word, wordIndex) => (
-          <span key={wordIndex} className="inline-block whitespace-nowrap">
-            {word.split('').map((char, charIndex) => {
-              const globalIndex = name.indexOf(word) + charIndex;
-              return (
-                <motion.span
-                  key={charIndex}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ 
-                    duration: 0.5,
-                    delay: 0.2 + (globalIndex * 0.03),
-                    ease: [0.25, 0.1, 0.25, 1]
-                  }}
-                  className="text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight inline-block text-white"
-                >
-                  {char}
-                </motion.span>
-              );
-            })}
-            {wordIndex < name.split(' ').length - 1 && (
-              <span className="inline-block text-6xl md:text-7xl lg:text-8xl">&nbsp;</span>
-            )}
-          </span>
-        ))}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ 
+            duration: 0.5,
+            delay: 0.2,
+            ease: [0.25, 0.1, 0.25, 1]
+          }}
+          className="text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-white"
+        >
+          <span className="inline-block whitespace-nowrap">maya</span>{' '}
+          <span className="inline-block whitespace-nowrap">lekhi</span>
+        </motion.h1>
       </div>
 
       <motion.div 
