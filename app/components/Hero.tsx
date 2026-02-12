@@ -22,20 +22,30 @@ export default function Hero() {
       </motion.p>
 
       <div className="overflow-hidden leading-[1.2] py-1">
-        {name.split('').map((char, index) => (
-          <motion.span
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ 
-              duration: 0.5,
-              delay: 0.2 + (index * 0.03),
-              ease: [0.25, 0.1, 0.25, 1]
-            }}
-            className="text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight inline-block text-white"
-          >
-            {char === ' ' ? '\u00A0' : char}
-          </motion.span>
+        {name.split(' ').map((word, wordIndex) => (
+          <span key={wordIndex} className="inline-block whitespace-nowrap">
+            {word.split('').map((char, charIndex) => {
+              const globalIndex = name.indexOf(word) + charIndex;
+              return (
+                <motion.span
+                  key={charIndex}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.5,
+                    delay: 0.2 + (globalIndex * 0.03),
+                    ease: [0.25, 0.1, 0.25, 1]
+                  }}
+                  className="text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight inline-block text-white"
+                >
+                  {char}
+                </motion.span>
+              );
+            })}
+            {wordIndex < name.split(' ').length - 1 && (
+              <span className="inline-block text-6xl md:text-7xl lg:text-8xl">&nbsp;</span>
+            )}
+          </span>
         ))}
       </div>
 
