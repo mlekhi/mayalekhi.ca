@@ -154,6 +154,24 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "maya lekhi",
   description: "maya's personal site",
+  openGraph: {
+    title: "maya lekhi",
+    description: "maya's personal site",
+    images: [
+      {
+        url: "/gradients/pink-yellow.png",
+        width: 1200,
+        height: 630,
+        alt: "maya lekhi",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "maya lekhi",
+    description: "maya's personal site",
+    images: ["/gradients/pink-yellow.png"],
+  },
 };
 
 export default function RootLayout({
