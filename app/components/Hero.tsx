@@ -2,9 +2,12 @@
 
 import { motion } from 'framer-motion';
 
-export default function Hero() {
-  const name = "maya lekhi";
-  
+interface HeroProps {
+  name?: string;
+  description?: string;
+}
+
+export default function Hero({ name = "maya lekhi", description = "product engineer + community builder + investor" }: HeroProps) {
   return (
     <motion.section 
       initial={{ opacity: 0 }}
@@ -23,6 +26,7 @@ export default function Hero() {
 
       <div className="overflow-hidden leading-[1.2] py-1">
         <motion.h1
+          key={name}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ 
@@ -32,19 +36,30 @@ export default function Hero() {
           }}
           className="text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-white"
         >
-          <span className="inline-block whitespace-nowrap">maya</span>{' '}
-          <span className="inline-block whitespace-nowrap">lekhi</span>
+          {name.includes('▲') ? (
+            <>
+              <span className="inline-block whitespace-nowrap">maya</span>{' '}
+              <span className="inline-block whitespace-nowrap">lekhi</span>{' '}
+              <span className="inline-block whitespace-nowrap">▲</span>
+            </>
+          ) : (
+            <>
+              <span className="inline-block whitespace-nowrap">maya</span>{' '}
+              <span className="inline-block whitespace-nowrap">lekhi</span>
+            </>
+          )}
         </motion.h1>
       </div>
 
       <motion.div 
+        key={description}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
         className="mt-8 space-y-4"
       >
         <p className="text-lg md:text-xl text-gray-300">
-          product engineer + community builder + investor
+          {description}
         </p>
       </motion.div>
     </motion.section>

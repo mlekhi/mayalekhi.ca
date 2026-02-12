@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import MenuBar from "./components/MenuBar";
 import Hero from "./components/Hero";
@@ -8,9 +9,15 @@ import DesignGallery from "./components/DesignGallery";
 import FunThings from "./components/FunThings";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { useKonamiCode } from "./components/EasterEgg";
 import { fadeIn, slideUp, staggerContainer } from './animations';
 
 export default function Home() {
+  const [easterEggActive, setEasterEggActive] = useState(false);
+  
+  useKonamiCode(() => {
+    setEasterEggActive(true);
+  });
 
   return (
     <motion.div 
@@ -55,7 +62,10 @@ export default function Home() {
           <div className="min-h-[90vh] flex items-center">
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-12 lg:gap-16 items-center">
               <motion.div variants={slideUp} viewport={{ once: true }}>
-                <Hero />
+                <Hero 
+                  name={easterEggActive ? "maya lekhi ▲" : "maya lekhi"}
+                  description={easterEggActive ? "incoming swe @ vercel" : "product engineer + community builder + investor"}
+                />
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}

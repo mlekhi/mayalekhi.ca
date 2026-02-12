@@ -1,9 +1,75 @@
+'use client';
+
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { EnvelopeIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 
 interface MenuBarProps {
   isVisible: boolean;
+}
+
+function ScrambleText({ original, target }: { original: string; target: string }) {
+  const [displayText, setDisplayText] = useState(original);
+  const [isHovering, setIsHovering] = useState(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const scrambleCountRef = useRef(0);
+
+  const chars = 'abcdefghijklmnopqrstuvwxyz';
+
+  const getRandomChar = () => chars[Math.floor(Math.random() * chars.length)];
+
+  const scramble = (text: string) => {
+    return text
+      .split('')
+      .map((char, i) => {
+        if (char === ' ') return ' ';
+        return getRandomChar();
+      })
+      .join('');
+  };
+
+  useEffect(() => {
+    if (isHovering) {
+      scrambleCountRef.current = 0;
+      const maxScrambles = 8;
+      const scrambleInterval = 50;
+
+      intervalRef.current = setInterval(() => {
+        scrambleCountRef.current++;
+        
+        if (scrambleCountRef.current < maxScrambles) {
+          setDisplayText(scramble(target));
+        } else {
+          setDisplayText(target);
+          if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+          }
+        }
+      }, scrambleInterval);
+    } else {
+      setDisplayText(original);
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    }
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [isHovering, original, target]);
+
+  return (
+    <div
+      className="text-sm tracking-tight text-white cursor-default relative whitespace-nowrap"
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      {displayText}
+    </div>
+  );
 }
 
 export default function MenuBar({ isVisible }: MenuBarProps) {
@@ -15,10 +81,7 @@ export default function MenuBar({ isVisible }: MenuBarProps) {
       className="bg-black/80 backdrop-blur-sm border-b border-gray-800 relative z-[100]"
     >
       <div className="w-full px-8 h-12 flex items-center justify-between">
-          <div className="text-sm tracking-tight text-white">
-            maya lekhi
-          </div>
-          <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 ease-out group-hover:w-full"></div>
+          <ScrambleText original="maya lekhi" target="konami code" />
         <div className="flex items-center space-x-6">
           <a
             href="mailto:maya.lekhi1@gmail.com"
