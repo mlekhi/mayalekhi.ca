@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const acidGrotesk = localFont({
   src: [
@@ -182,6 +183,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${acidGrotesk.variable} ${geistMono.variable} dark`}>
       <body className={`${acidGrotesk.className} bg-black text-white`}>{children}</body>
+      <Analytics />
     </html>
   );
 }
