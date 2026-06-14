@@ -10,6 +10,12 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     title: "Software Engineer Intern",
+    company: "Vercel",
+    companyUrl: "https://vercel.com/",
+    period: "2026"
+  },
+  {
+    title: "Software Engineer Intern",
     company: "Notion",
     companyUrl: "https://notion.com/",
     period: "2026"
