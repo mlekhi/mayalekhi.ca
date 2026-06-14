@@ -50,12 +50,6 @@ const experiences: ExperienceItem[] = [
     companyUrl: "https://borealisai.com",
     period: "2024"
   },
-  {
-    title: "Production Engineering Fellow",
-    company: "Meta",
-    companyUrl: "https://meta.com",
-    period: "2024"
-  },
 ];
 
 export default function Experience() {
