@@ -15,6 +15,12 @@ const experiences: ExperienceItem[] = [
     period: "2026"
   },
   {
+    title: "Fellow",
+    company: "8VC",
+    companyUrl: "https://8vc.com/",
+    period: "2026"
+  },
+  {
     title: "Software Engineer Intern",
     company: "Notion",
     companyUrl: "https://notion.com/",
